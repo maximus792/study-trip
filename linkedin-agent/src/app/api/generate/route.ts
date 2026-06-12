@@ -5,6 +5,7 @@ import {
   writePost,
   rewritePost,
   suggestVisuals,
+  extractToKnowledgeGraph,
 } from "@/agents";
 
 export async function POST(request: NextRequest) {
@@ -43,6 +44,12 @@ export async function POST(request: NextRequest) {
         if (draftResult.status === "rejected") throw draftResult.reason;
         const draft = draftResult.value;
         const visuals = visualsResult.status === "fulfilled" ? visualsResult.value : null;
+
+        // Fire-and-forget: extract entities to knowledge graph
+        extractToKnowledgeGraph(draft.data).catch((err) =>
+          console.error("KG extraction failed (non-blocking):", err)
+        );
+
         return NextResponse.json({
           draft: draft.data,
           visuals: visuals?.data ?? [],

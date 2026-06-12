@@ -1,0 +1,2729 @@
+{
+  "nodes": [
+    {
+      "id": "README",
+      "label": "README",
+      "type": "unknown",
+      "folder": ".",
+      "posted": null,
+      "confidence": "unknown",
+      "tags": [],
+      "connections": 1
+    },
+    {
+      "id": "sumeet-intel-to-coach",
+      "label": "From Intel VP to Executive Coach",
+      "type": "story",
+      "folder": "stories",
+      "posted": false,
+      "confidence": "high",
+      "tags": [
+        "career-transition",
+        "intel",
+        "coaching",
+        "leadership",
+        "origin-story"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "sachin-tedx-at-13",
+      "label": "Sachin's TEDx Talk at Age 13",
+      "type": "story",
+      "folder": "stories",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "tedx",
+        "youth",
+        "entrepreneurship",
+        "passion",
+        "milestone"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "sachin-bloomberg-pitch",
+      "label": "Sachin Pitches 3Doshas on Bloomberg TV at 15",
+      "type": "story",
+      "folder": "stories",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "bloomberg",
+        "pitch",
+        "television",
+        "youth",
+        "milestone"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "nitu-biotech-to-blueprint",
+      "label": "From Biotech Executive to Blueprint Creator",
+      "type": "story",
+      "folder": "stories",
+      "posted": false,
+      "confidence": "high",
+      "tags": [
+        "career-transition",
+        "biotech",
+        "blueprint",
+        "science",
+        "wellness"
+      ],
+      "connections": 5
+    },
+    {
+      "id": "family-founded-company",
+      "label": "A Family-Founded Coaching Company",
+      "type": "story",
+      "folder": "stories",
+      "posted": false,
+      "confidence": "high",
+      "tags": [
+        "family",
+        "origin-story",
+        "heritage",
+        "ayurveda",
+        "values"
+      ],
+      "connections": 8
+    },
+    {
+      "id": "student-mentorship-program",
+      "label": "Student Mentorship & Coaching Program",
+      "type": "product",
+      "folder": "products",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "product",
+        "student",
+        "mentorship",
+        "coaching",
+        "youth"
+      ],
+      "connections": 8
+    },
+    {
+      "id": "one-on-one-coaching",
+      "label": "1-on-1 Coaching",
+      "type": "product",
+      "folder": "products",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "product",
+        "coaching",
+        "high-touch",
+        "selective",
+        "executive"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "free-diagnostic",
+      "label": "Free 3-Minute Diagnostic",
+      "type": "product",
+      "folder": "products",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "product",
+        "free",
+        "diagnostic",
+        "entry-point",
+        "assessment"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "corporate-workshops",
+      "label": "Corporate Workshops",
+      "type": "product",
+      "folder": "products",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "product",
+        "workshop",
+        "corporate",
+        "team-building",
+        "leadership"
+      ],
+      "connections": 34
+    },
+    {
+      "id": "career-alignment-call",
+      "label": "Career Alignment Call",
+      "type": "product",
+      "folder": "products",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "product",
+        "coaching",
+        "call",
+        "guided"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "career-alignment-blueprint",
+      "label": "Career Alignment Blueprint",
+      "type": "product",
+      "folder": "products",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "product",
+        "diagnostic",
+        "blueprint",
+        "self-guided",
+        "dosha"
+      ],
+      "connections": 27
+    },
+    {
+      "id": "linkedin-sookmyung-agentic-ai",
+      "label": "LinkedIn Post: Teaching Agentic AI at Sookmyung",
+      "type": "post",
+      "folder": "posts",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "linkedin",
+        "sookmyung",
+        "korea",
+        "ai",
+        "agentic-ai",
+        "international"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "linkedin-sjsu-scu-workshops-2026",
+      "label": "LinkedIn Post: SJSU & SCU Workshops Kickoff 2026",
+      "type": "post",
+      "folder": "posts",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "linkedin",
+        "workshop",
+        "sjsu",
+        "scu",
+        "strengths-alignment"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "linkedin-3doshas-science-coaching",
+      "label": "LinkedIn Post: 3Doshas Science Coaching",
+      "type": "post",
+      "folder": "posts",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "linkedin",
+        "methodology",
+        "coaching",
+        "3doshas-science"
+      ],
+      "connections": 2
+    },
+    {
+      "id": "sumeet-syal",
+      "label": "Sumeet Syal",
+      "type": "person",
+      "folder": "people",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "founder",
+        "ceo",
+        "executive-coach",
+        "intel",
+        "stanford",
+        "berkeley"
+      ],
+      "connections": 48
+    },
+    {
+      "id": "sujay-syal",
+      "label": "Sujay Syal",
+      "type": "person",
+      "folder": "people",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "co-founder",
+        "cto",
+        "youth-coach",
+        "atlassian",
+        "ucla",
+        "data-science",
+        "ai"
+      ],
+      "connections": 14
+    },
+    {
+      "id": "sachin-syal",
+      "label": "Sachin Syal",
+      "type": "person",
+      "folder": "people",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "co-founder",
+        "cmo",
+        "youth-coach",
+        "tedx-speaker",
+        "bloomberg",
+        "eagle-scout",
+        "podcast"
+      ],
+      "connections": 32
+    },
+    {
+      "id": "nitu-syal",
+      "label": "Nitu Prasad Syal",
+      "type": "person",
+      "folder": "people",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "co-founder",
+        "coo",
+        "career-coach",
+        "biotech",
+        "genentech",
+        "amgen",
+        "blueprint"
+      ],
+      "connections": 18
+    },
+    {
+      "id": "ucla",
+      "label": "UCLA",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "education",
+        "mba",
+        "anderson"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "uc-santa-cruz",
+      "label": "UC Santa Cruz (UCSC)",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "partner",
+        "teaching",
+        "uc-system"
+      ],
+      "connections": 5
+    },
+    {
+      "id": "uc-berkeley",
+      "label": "UC Berkeley",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "partner",
+        "certification",
+        "haas",
+        "uc-system"
+      ],
+      "connections": 5
+    },
+    {
+      "id": "tedx",
+      "label": "TEDx",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "events",
+        "speaking",
+        "talks",
+        "youth"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "stanford",
+      "label": "Stanford University",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "education",
+        "executive-training",
+        "leadership"
+      ],
+      "connections": 2
+    },
+    {
+      "id": "sookmyung",
+      "label": "Sookmyung Women's University",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "partner",
+        "korea",
+        "international",
+        "ai"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "sjsu",
+      "label": "San Jose State University (SJSU)",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "partner",
+        "teaching",
+        "silicon-valley"
+      ],
+      "connections": 12
+    },
+    {
+      "id": "servicenow",
+      "label": "ServiceNow",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "tech",
+        "enterprise-software",
+        "workshop"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "scu",
+      "label": "Santa Clara University (SCU)",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "partner",
+        "teaching",
+        "silicon-valley"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "schoolhouse-world",
+      "label": "Schoolhouse.world",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "education",
+        "nonprofit",
+        "sal-khan",
+        "tutoring",
+        "youth"
+      ],
+      "connections": 1
+    },
+    {
+      "id": "remitly",
+      "label": "Remitly",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "fintech"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "personio",
+      "label": "Personio",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "hr-tech",
+        "europe"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "palo-alto-networks",
+      "label": "Palo Alto Networks",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "cybersecurity",
+        "silicon-valley",
+        "workshop"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "nanonets",
+      "label": "Nanonets",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "medium",
+      "tags": [
+        "corporate-client",
+        "ai",
+        "startup"
+      ],
+      "connections": 2
+    },
+    {
+      "id": "ja-worldwide",
+      "label": "Junior Achievement (JA) Worldwide",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "nonprofit",
+        "award",
+        "youth-entrepreneurship"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "intel",
+      "label": "Intel",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "tech",
+        "silicon-valley",
+        "former-employer"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "google",
+      "label": "Google",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "tech",
+        "silicon-valley",
+        "workshop"
+      ],
+      "connections": 11
+    },
+    {
+      "id": "genentech",
+      "label": "Genentech",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "biotech",
+        "former-employer",
+        "pharma"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "freethink",
+      "label": "Freethink",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "media",
+        "documentary",
+        "feature"
+      ],
+      "connections": 5
+    },
+    {
+      "id": "fhnw",
+      "label": "FHNW (University of Applied Sciences and Arts Northwestern Switzerland)",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "medium",
+      "tags": [
+        "university",
+        "partner",
+        "switzerland",
+        "europe",
+        "international"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "ey",
+      "label": "Ernst & Young (EY)",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "consulting",
+        "big-four",
+        "workshop"
+      ],
+      "connections": 5
+    },
+    {
+      "id": "cal-poly",
+      "label": "Cal Poly San Luis Obispo",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "university",
+        "education",
+        "engineering",
+        "undergraduate"
+      ],
+      "connections": 1
+    },
+    {
+      "id": "bloomberg",
+      "label": "Bloomberg",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "media",
+        "television",
+        "2-minute-drill",
+        "feature"
+      ],
+      "connections": 11
+    },
+    {
+      "id": "atlassian",
+      "label": "Atlassian",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "tech",
+        "enterprise-software",
+        "employer"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "apple-tv",
+      "label": "Apple TV+",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "media",
+        "television",
+        "streaming",
+        "2-minute-drill",
+        "feature"
+      ],
+      "connections": 11
+    },
+    {
+      "id": "amgen",
+      "label": "Amgen",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "biotech",
+        "former-employer",
+        "pharma"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "affinity-solutions",
+      "label": "Affinity Solutions",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "medium",
+      "tags": [
+        "corporate-client",
+        "data-analytics"
+      ],
+      "connections": 2
+    },
+    {
+      "id": "adobe",
+      "label": "Adobe",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "corporate-client",
+        "tech",
+        "silicon-valley",
+        "workshop"
+      ],
+      "connections": 5
+    },
+    {
+      "id": "3doshas",
+      "label": "3Doshas",
+      "type": "organization",
+      "folder": "organizations",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "coaching",
+        "consulting",
+        "ayurveda",
+        "yoga",
+        "silicon-valley",
+        "startup",
+        "career-coaching"
+      ],
+      "connections": 97
+    },
+    {
+      "id": "tedx-youth-warm-springs",
+      "label": "TEDxYouth@WarmSprings — Sachin Syal Talk",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "tedx",
+        "speaking",
+        "youth",
+        "passion",
+        "entrepreneurship"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "sookmyung-teaching",
+      "label": "Sumeet Syal Teaching at Sookmyung Women's University",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "teaching",
+        "korea",
+        "international",
+        "ai",
+        "agentic-ai",
+        "university"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "sjsu-workshop-2026",
+      "label": "3Doshas Workshop at SJSU (2026)",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "workshop",
+        "sjsu",
+        "university",
+        "strengths-alignment"
+      ],
+      "connections": 7
+    },
+    {
+      "id": "servicenow-workshop",
+      "label": "3Doshas Workshop at ServiceNow",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "workshop",
+        "servicenow",
+        "corporate",
+        "marketing"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "scu-workshop-2026",
+      "label": "3Doshas Workshop at SCU (2026)",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "workshop",
+        "scu",
+        "university",
+        "strengths-alignment",
+        "engineering"
+      ],
+      "connections": 8
+    },
+    {
+      "id": "podcast-episode-90-sumeet",
+      "label": "Podcast Episode 90: Sumeet Syal on 3Doshas",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "podcast",
+        "interview",
+        "apple-podcasts"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "ochakde-podcast",
+      "label": "The O'ChakDe Show Podcast",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "podcast",
+        "interviews",
+        "entrepreneurship",
+        "tech-leaders"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "ja-impact-award",
+      "label": "JA Worldwide Impact Award",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "award",
+        "ja-worldwide",
+        "recognition",
+        "youth-entrepreneurship"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "intel-workshop",
+      "label": "3Doshas Workshop at Intel",
+      "type": "event",
+      "folder": "events",
+      "posted": false,
+      "confidence": "medium",
+      "tags": [
+        "workshop",
+        "intel",
+        "corporate",
+        "leadership",
+        "return"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "google-workshop",
+      "label": "3Doshas Workshop at Google",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "workshop",
+        "google",
+        "corporate",
+        "leadership",
+        "silicon-valley"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "freethink-documentary",
+      "label": "Freethink Documentary Feature",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "documentary",
+        "media",
+        "freethink",
+        "feature"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "ey-workshop",
+      "label": "3Doshas Workshop at EY",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "workshop",
+        "ey",
+        "corporate",
+        "leadership"
+      ],
+      "connections": 4
+    },
+    {
+      "id": "adobe-workshop",
+      "label": "3Doshas Workshop at Adobe",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "workshop",
+        "adobe",
+        "corporate",
+        "leadership"
+      ],
+      "connections": 3
+    },
+    {
+      "id": "2-minute-drill",
+      "label": "Bloomberg & Apple TV — 2 Minute Drill",
+      "type": "event",
+      "folder": "events",
+      "posted": true,
+      "confidence": "high",
+      "tags": [
+        "television",
+        "pitch",
+        "bloomberg",
+        "apple-tv",
+        "competition"
+      ],
+      "connections": 9
+    },
+    {
+      "id": "vata",
+      "label": "Vata (Air)",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "dosha",
+        "ayurveda",
+        "air",
+        "creativity",
+        "movement"
+      ],
+      "connections": 12
+    },
+    {
+      "id": "three-doshas",
+      "label": "The Three Doshas",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "ayurveda",
+        "yoga",
+        "doshas",
+        "energy",
+        "foundation"
+      ],
+      "connections": 6
+    },
+    {
+      "id": "pitta",
+      "label": "Pitta (Fire)",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "dosha",
+        "ayurveda",
+        "fire",
+        "drive",
+        "transformation"
+      ],
+      "connections": 12
+    },
+    {
+      "id": "kapha",
+      "label": "Kapha (Water)",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "dosha",
+        "ayurveda",
+        "water",
+        "stability",
+        "nurturing"
+      ],
+      "connections": 12
+    },
+    {
+      "id": "inner-intelligence",
+      "label": "Inner Intelligence",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "philosophy",
+        "coaching",
+        "self-awareness",
+        "ayurveda"
+      ],
+      "connections": 8
+    },
+    {
+      "id": "hyperpersonalization",
+      "label": "HyperPersonalization",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "methodology",
+        "personalization",
+        "segment-of-one",
+        "coaching"
+      ],
+      "connections": 8
+    },
+    {
+      "id": "career-alignment",
+      "label": "Career Alignment",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "career",
+        "coaching",
+        "alignment",
+        "methodology"
+      ],
+      "connections": 9
+    },
+    {
+      "id": "3doshas-methodology",
+      "label": "3Doshas Methodology",
+      "type": "concept",
+      "folder": "concepts",
+      "posted": null,
+      "confidence": "high",
+      "tags": [
+        "methodology",
+        "coaching",
+        "ayurveda",
+        "yoga",
+        "science-based"
+      ],
+      "connections": 28
+    }
+  ],
+  "edges": [
+    {
+      "source": "README",
+      "target": "Target",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-intel-to-coach",
+      "target": "sumeet-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "sumeet-intel-to-coach",
+      "target": "3doshas",
+      "relation": "origin_of"
+    },
+    {
+      "source": "sumeet-intel-to-coach",
+      "target": "intel",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-intel-to-coach",
+      "target": "3doshas-methodology",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-tedx-at-13",
+      "target": "sachin-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "sachin-tedx-at-13",
+      "target": "tedx-youth-warm-springs",
+      "relation": "event"
+    },
+    {
+      "source": "sachin-tedx-at-13",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-tedx-at-13",
+      "target": "3doshas-methodology",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-tedx-at-13",
+      "target": "bloomberg",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-tedx-at-13",
+      "target": "apple-tv",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-bloomberg-pitch",
+      "target": "sachin-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "sachin-bloomberg-pitch",
+      "target": "2-minute-drill",
+      "relation": "event"
+    },
+    {
+      "source": "sachin-bloomberg-pitch",
+      "target": "3doshas",
+      "relation": "company"
+    },
+    {
+      "source": "sachin-bloomberg-pitch",
+      "target": "bloomberg",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-bloomberg-pitch",
+      "target": "apple-tv",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-bloomberg-pitch",
+      "target": "ja-worldwide",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-bloomberg-pitch",
+      "target": "3doshas-methodology",
+      "relation": "references"
+    },
+    {
+      "source": "nitu-biotech-to-blueprint",
+      "target": "nitu-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "nitu-biotech-to-blueprint",
+      "target": "genentech",
+      "relation": "references"
+    },
+    {
+      "source": "nitu-biotech-to-blueprint",
+      "target": "amgen",
+      "relation": "references"
+    },
+    {
+      "source": "nitu-biotech-to-blueprint",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "nitu-biotech-to-blueprint",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "sumeet-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "nitu-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "sachin-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "sujay-syal",
+      "relation": "protagonist"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "bloomberg",
+      "relation": "references"
+    },
+    {
+      "source": "family-founded-company",
+      "target": "apple-tv",
+      "relation": "references"
+    },
+    {
+      "source": "student-mentorship-program",
+      "target": "3doshas",
+      "relation": "offered_by"
+    },
+    {
+      "source": "student-mentorship-program",
+      "target": "3doshas-methodology",
+      "relation": "based_on"
+    },
+    {
+      "source": "student-mentorship-program",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "student-mentorship-program",
+      "target": "sachin-syal",
+      "relation": "references"
+    },
+    {
+      "source": "student-mentorship-program",
+      "target": "sjsu",
+      "relation": "references"
+    },
+    {
+      "source": "student-mentorship-program",
+      "target": "sujay-syal",
+      "relation": "references"
+    },
+    {
+      "source": "student-mentorship-program",
+      "target": "atlassian",
+      "relation": "references"
+    },
+    {
+      "source": "one-on-one-coaching",
+      "target": "3doshas",
+      "relation": "offered_by"
+    },
+    {
+      "source": "one-on-one-coaching",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "one-on-one-coaching",
+      "target": "career-alignment-call",
+      "relation": "follows"
+    },
+    {
+      "source": "free-diagnostic",
+      "target": "3doshas",
+      "relation": "offered_by"
+    },
+    {
+      "source": "free-diagnostic",
+      "target": "career-alignment-blueprint",
+      "relation": "leads_to"
+    },
+    {
+      "source": "free-diagnostic",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "free-diagnostic",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "free-diagnostic",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "free-diagnostic",
+      "target": "3doshas-methodology",
+      "relation": "references"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "3doshas",
+      "relation": "offered_by"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "3doshas-methodology",
+      "relation": "based_on"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "google",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "intel",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "palo-alto-networks",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "adobe",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "ey",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "servicenow",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "atlassian",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "personio",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "remitly",
+      "relation": "delivered_at"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "sjsu",
+      "relation": "references"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "scu",
+      "relation": "references"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "uc-santa-cruz",
+      "relation": "references"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "uc-berkeley",
+      "relation": "references"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "fhnw",
+      "relation": "references"
+    },
+    {
+      "source": "corporate-workshops",
+      "target": "sookmyung",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment-call",
+      "target": "3doshas",
+      "relation": "offered_by"
+    },
+    {
+      "source": "career-alignment-call",
+      "target": "career-alignment-blueprint",
+      "relation": "follows"
+    },
+    {
+      "source": "career-alignment-call",
+      "target": "one-on-one-coaching",
+      "relation": "precedes"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "3doshas",
+      "relation": "offered_by"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "nitu-syal",
+      "relation": "created_by"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "3doshas-methodology",
+      "relation": "based_on"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "career-alignment-call",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "one-on-one-coaching",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "google",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment-blueprint",
+      "target": "servicenow",
+      "relation": "references"
+    },
+    {
+      "source": "linkedin-sookmyung-agentic-ai",
+      "target": "sumeet-syal",
+      "relation": "posted_by"
+    },
+    {
+      "source": "linkedin-sookmyung-agentic-ai",
+      "target": "sookmyung",
+      "relation": "mentions"
+    },
+    {
+      "source": "linkedin-sookmyung-agentic-ai",
+      "target": "sjsu",
+      "relation": "mentions"
+    },
+    {
+      "source": "linkedin-sookmyung-agentic-ai",
+      "target": "sookmyung-teaching",
+      "relation": "references"
+    },
+    {
+      "source": "linkedin-sjsu-scu-workshops-2026",
+      "target": "sumeet-syal",
+      "relation": "posted_by"
+    },
+    {
+      "source": "linkedin-sjsu-scu-workshops-2026",
+      "target": "sjsu",
+      "relation": "mentions"
+    },
+    {
+      "source": "linkedin-sjsu-scu-workshops-2026",
+      "target": "scu",
+      "relation": "mentions"
+    },
+    {
+      "source": "linkedin-sjsu-scu-workshops-2026",
+      "target": "sjsu-workshop-2026",
+      "relation": "references"
+    },
+    {
+      "source": "linkedin-sjsu-scu-workshops-2026",
+      "target": "scu-workshop-2026",
+      "relation": "references"
+    },
+    {
+      "source": "linkedin-sjsu-scu-workshops-2026",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "linkedin-3doshas-science-coaching",
+      "target": "sumeet-syal",
+      "relation": "posted_by"
+    },
+    {
+      "source": "linkedin-3doshas-science-coaching",
+      "target": "3doshas-methodology",
+      "relation": "topic"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "3doshas",
+      "relation": "founded"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "nitu-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "sachin-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "sujay-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "sjsu",
+      "relation": "teaches_at"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "scu",
+      "relation": "teaches_at"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "uc-santa-cruz",
+      "relation": "teaches_at"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "google",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "intel",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "palo-alto-networks",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "sookmyung",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "3doshas-methodology",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "bloomberg",
+      "relation": "references"
+    },
+    {
+      "source": "sumeet-syal",
+      "target": "apple-tv",
+      "relation": "references"
+    },
+    {
+      "source": "sujay-syal",
+      "target": "3doshas",
+      "relation": "co_founded"
+    },
+    {
+      "source": "sujay-syal",
+      "target": "sumeet-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sujay-syal",
+      "target": "nitu-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sujay-syal",
+      "target": "sachin-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sujay-syal",
+      "target": "atlassian",
+      "relation": "works_at"
+    },
+    {
+      "source": "sujay-syal",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "3doshas",
+      "relation": "co_founded"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "sumeet-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "nitu-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "sujay-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "bloomberg",
+      "relation": "appeared_on"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "apple-tv",
+      "relation": "appeared_on"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "tedx-youth-warm-springs",
+      "relation": "spoke_at"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "sjsu",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "2-minute-drill",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "freethink",
+      "relation": "references"
+    },
+    {
+      "source": "sachin-syal",
+      "target": "ja-worldwide",
+      "relation": "references"
+    },
+    {
+      "source": "nitu-syal",
+      "target": "3doshas",
+      "relation": "co_founded"
+    },
+    {
+      "source": "nitu-syal",
+      "target": "sumeet-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "nitu-syal",
+      "target": "sachin-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "nitu-syal",
+      "target": "sujay-syal",
+      "relation": "family_member"
+    },
+    {
+      "source": "nitu-syal",
+      "target": "career-alignment-blueprint",
+      "relation": "created"
+    },
+    {
+      "source": "nitu-syal",
+      "target": "genentech",
+      "relation": "references"
+    },
+    {
+      "source": "nitu-syal",
+      "target": "amgen",
+      "relation": "references"
+    },
+    {
+      "source": "ucla",
+      "target": "sumeet-syal",
+      "relation": "educated"
+    },
+    {
+      "source": "ucla",
+      "target": "sujay-syal",
+      "relation": "educated"
+    },
+    {
+      "source": "ucla",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "uc-santa-cruz",
+      "target": "3doshas",
+      "relation": "partner_of"
+    },
+    {
+      "source": "uc-santa-cruz",
+      "target": "sumeet-syal",
+      "relation": "employer_of"
+    },
+    {
+      "source": "uc-berkeley",
+      "target": "3doshas",
+      "relation": "partner_of"
+    },
+    {
+      "source": "uc-berkeley",
+      "target": "sumeet-syal",
+      "relation": "certified"
+    },
+    {
+      "source": "uc-berkeley",
+      "target": "nitu-syal",
+      "relation": "educated"
+    },
+    {
+      "source": "tedx",
+      "target": "sachin-syal",
+      "relation": "platform_for"
+    },
+    {
+      "source": "tedx",
+      "target": "tedx-youth-warm-springs",
+      "relation": "hosted"
+    },
+    {
+      "source": "stanford",
+      "target": "sumeet-syal",
+      "relation": "trained"
+    },
+    {
+      "source": "stanford",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "sookmyung",
+      "target": "3doshas",
+      "relation": "partner_of"
+    },
+    {
+      "source": "sookmyung",
+      "target": "sumeet-syal",
+      "relation": "hosted"
+    },
+    {
+      "source": "sjsu",
+      "target": "3doshas",
+      "relation": "partner_of"
+    },
+    {
+      "source": "sjsu",
+      "target": "sumeet-syal",
+      "relation": "employer_of"
+    },
+    {
+      "source": "sjsu",
+      "target": "sachin-syal",
+      "relation": "attended_by"
+    },
+    {
+      "source": "servicenow",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "servicenow",
+      "target": "corporate-workshops",
+      "relation": "workshop_host"
+    },
+    {
+      "source": "scu",
+      "target": "3doshas",
+      "relation": "partner_of"
+    },
+    {
+      "source": "scu",
+      "target": "sumeet-syal",
+      "relation": "employer_of"
+    },
+    {
+      "source": "schoolhouse-world",
+      "target": "sachin-syal",
+      "relation": "member"
+    },
+    {
+      "source": "remitly",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "remitly",
+      "target": "corporate-workshops",
+      "relation": "workshop_host"
+    },
+    {
+      "source": "personio",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "personio",
+      "target": "corporate-workshops",
+      "relation": "workshop_host"
+    },
+    {
+      "source": "palo-alto-networks",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "palo-alto-networks",
+      "target": "corporate-workshops",
+      "relation": "workshop_host"
+    },
+    {
+      "source": "palo-alto-networks",
+      "target": "sumeet-syal",
+      "relation": "references"
+    },
+    {
+      "source": "nanonets",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "ja-worldwide",
+      "target": "sachin-syal",
+      "relation": "awarded"
+    },
+    {
+      "source": "ja-worldwide",
+      "target": "3doshas",
+      "relation": "awarded"
+    },
+    {
+      "source": "intel",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "intel",
+      "target": "sumeet-syal",
+      "relation": "former_employer_of"
+    },
+    {
+      "source": "google",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "google",
+      "target": "corporate-workshops",
+      "relation": "workshop_host"
+    },
+    {
+      "source": "google",
+      "target": "sumeet-syal",
+      "relation": "references"
+    },
+    {
+      "source": "google",
+      "target": "sachin-syal",
+      "relation": "references"
+    },
+    {
+      "source": "genentech",
+      "target": "nitu-syal",
+      "relation": "former_employer_of"
+    },
+    {
+      "source": "genentech",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "freethink",
+      "target": "sachin-syal",
+      "relation": "featured"
+    },
+    {
+      "source": "freethink",
+      "target": "3doshas",
+      "relation": "featured"
+    },
+    {
+      "source": "fhnw",
+      "target": "3doshas",
+      "relation": "partner_of"
+    },
+    {
+      "source": "ey",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "ey",
+      "target": "corporate-workshops",
+      "relation": "workshop_host"
+    },
+    {
+      "source": "cal-poly",
+      "target": "sumeet-syal",
+      "relation": "educated"
+    },
+    {
+      "source": "bloomberg",
+      "target": "3doshas",
+      "relation": "featured"
+    },
+    {
+      "source": "bloomberg",
+      "target": "sachin-syal",
+      "relation": "featured"
+    },
+    {
+      "source": "bloomberg",
+      "target": "2-minute-drill",
+      "relation": "references"
+    },
+    {
+      "source": "atlassian",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "atlassian",
+      "target": "sujay-syal",
+      "relation": "employer_of"
+    },
+    {
+      "source": "apple-tv",
+      "target": "3doshas",
+      "relation": "featured"
+    },
+    {
+      "source": "apple-tv",
+      "target": "sachin-syal",
+      "relation": "featured"
+    },
+    {
+      "source": "apple-tv",
+      "target": "2-minute-drill",
+      "relation": "references"
+    },
+    {
+      "source": "apple-tv",
+      "target": "bloomberg",
+      "relation": "references"
+    },
+    {
+      "source": "amgen",
+      "target": "nitu-syal",
+      "relation": "former_employer_of"
+    },
+    {
+      "source": "affinity-solutions",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "adobe",
+      "target": "3doshas",
+      "relation": "client_of"
+    },
+    {
+      "source": "adobe",
+      "target": "corporate-workshops",
+      "relation": "workshop_host"
+    },
+    {
+      "source": "3doshas",
+      "target": "sumeet-syal",
+      "relation": "founded_by"
+    },
+    {
+      "source": "3doshas",
+      "target": "nitu-syal",
+      "relation": "co_founded_by"
+    },
+    {
+      "source": "3doshas",
+      "target": "sachin-syal",
+      "relation": "co_founded_by"
+    },
+    {
+      "source": "3doshas",
+      "target": "sujay-syal",
+      "relation": "co_founded_by"
+    },
+    {
+      "source": "3doshas",
+      "target": "3doshas-methodology",
+      "relation": "uses"
+    },
+    {
+      "source": "3doshas",
+      "target": "career-alignment-blueprint",
+      "relation": "uses"
+    },
+    {
+      "source": "3doshas",
+      "target": "inner-intelligence",
+      "relation": "uses"
+    },
+    {
+      "source": "3doshas",
+      "target": "hyperpersonalization",
+      "relation": "uses"
+    },
+    {
+      "source": "3doshas",
+      "target": "career-alignment-blueprint",
+      "relation": "offers"
+    },
+    {
+      "source": "3doshas",
+      "target": "career-alignment-call",
+      "relation": "offers"
+    },
+    {
+      "source": "3doshas",
+      "target": "one-on-one-coaching",
+      "relation": "offers"
+    },
+    {
+      "source": "3doshas",
+      "target": "corporate-workshops",
+      "relation": "offers"
+    },
+    {
+      "source": "3doshas",
+      "target": "student-mentorship-program",
+      "relation": "offers"
+    },
+    {
+      "source": "3doshas",
+      "target": "google",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "intel",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "adobe",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "palo-alto-networks",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "ey",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "servicenow",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "atlassian",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "personio",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "remitly",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "affinity-solutions",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "nanonets",
+      "relation": "client"
+    },
+    {
+      "source": "3doshas",
+      "target": "uc-santa-cruz",
+      "relation": "partner"
+    },
+    {
+      "source": "3doshas",
+      "target": "uc-berkeley",
+      "relation": "partner"
+    },
+    {
+      "source": "3doshas",
+      "target": "scu",
+      "relation": "partner"
+    },
+    {
+      "source": "3doshas",
+      "target": "sjsu",
+      "relation": "partner"
+    },
+    {
+      "source": "3doshas",
+      "target": "fhnw",
+      "relation": "partner"
+    },
+    {
+      "source": "3doshas",
+      "target": "sookmyung",
+      "relation": "partner"
+    },
+    {
+      "source": "3doshas",
+      "target": "bloomberg",
+      "relation": "featured_on"
+    },
+    {
+      "source": "3doshas",
+      "target": "apple-tv",
+      "relation": "featured_on"
+    },
+    {
+      "source": "3doshas",
+      "target": "freethink",
+      "relation": "featured_on"
+    },
+    {
+      "source": "3doshas",
+      "target": "ja-worldwide",
+      "relation": "award"
+    },
+    {
+      "source": "3doshas",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "tedx-youth-warm-springs",
+      "target": "sachin-syal",
+      "relation": "speaker"
+    },
+    {
+      "source": "tedx-youth-warm-springs",
+      "target": "tedx",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "tedx-youth-warm-springs",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "sookmyung-teaching",
+      "target": "sookmyung",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "sookmyung-teaching",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "sookmyung-teaching",
+      "target": "sjsu",
+      "relation": "references"
+    },
+    {
+      "source": "sjsu-workshop-2026",
+      "target": "sjsu",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "sjsu-workshop-2026",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "sjsu-workshop-2026",
+      "target": "corporate-workshops",
+      "relation": "type"
+    },
+    {
+      "source": "sjsu-workshop-2026",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "sjsu-workshop-2026",
+      "target": "scu-workshop-2026",
+      "relation": "references"
+    },
+    {
+      "source": "servicenow-workshop",
+      "target": "servicenow",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "servicenow-workshop",
+      "target": "corporate-workshops",
+      "relation": "type"
+    },
+    {
+      "source": "servicenow-workshop",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "scu-workshop-2026",
+      "target": "scu",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "scu-workshop-2026",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "scu-workshop-2026",
+      "target": "corporate-workshops",
+      "relation": "type"
+    },
+    {
+      "source": "scu-workshop-2026",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "scu-workshop-2026",
+      "target": "sjsu-workshop-2026",
+      "relation": "references"
+    },
+    {
+      "source": "scu-workshop-2026",
+      "target": "3doshas-methodology",
+      "relation": "references"
+    },
+    {
+      "source": "podcast-episode-90-sumeet",
+      "target": "sumeet-syal",
+      "relation": "guest"
+    },
+    {
+      "source": "podcast-episode-90-sumeet",
+      "target": "3doshas",
+      "relation": "topic"
+    },
+    {
+      "source": "podcast-episode-90-sumeet",
+      "target": "3doshas-methodology",
+      "relation": "topic"
+    },
+    {
+      "source": "ochakde-podcast",
+      "target": "sachin-syal",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "ochakde-podcast",
+      "target": "3doshas",
+      "relation": "related_to"
+    },
+    {
+      "source": "ochakde-podcast",
+      "target": "google",
+      "relation": "references"
+    },
+    {
+      "source": "ja-impact-award",
+      "target": "sachin-syal",
+      "relation": "awarded_to"
+    },
+    {
+      "source": "ja-impact-award",
+      "target": "ja-worldwide",
+      "relation": "awarded_by"
+    },
+    {
+      "source": "ja-impact-award",
+      "target": "3doshas",
+      "relation": "recognized"
+    },
+    {
+      "source": "intel-workshop",
+      "target": "intel",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "intel-workshop",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "intel-workshop",
+      "target": "corporate-workshops",
+      "relation": "type"
+    },
+    {
+      "source": "intel-workshop",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "intel-workshop",
+      "target": "google",
+      "relation": "references"
+    },
+    {
+      "source": "intel-workshop",
+      "target": "palo-alto-networks",
+      "relation": "references"
+    },
+    {
+      "source": "google-workshop",
+      "target": "google",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "google-workshop",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "google-workshop",
+      "target": "corporate-workshops",
+      "relation": "type"
+    },
+    {
+      "source": "google-workshop",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "freethink-documentary",
+      "target": "sachin-syal",
+      "relation": "featured"
+    },
+    {
+      "source": "freethink-documentary",
+      "target": "3doshas",
+      "relation": "featured"
+    },
+    {
+      "source": "freethink-documentary",
+      "target": "freethink",
+      "relation": "produced_by"
+    },
+    {
+      "source": "ey-workshop",
+      "target": "ey",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "ey-workshop",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "ey-workshop",
+      "target": "corporate-workshops",
+      "relation": "type"
+    },
+    {
+      "source": "ey-workshop",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "adobe-workshop",
+      "target": "adobe",
+      "relation": "hosted_by"
+    },
+    {
+      "source": "adobe-workshop",
+      "target": "sumeet-syal",
+      "relation": "delivered_by"
+    },
+    {
+      "source": "adobe-workshop",
+      "target": "corporate-workshops",
+      "relation": "type"
+    },
+    {
+      "source": "2-minute-drill",
+      "target": "sachin-syal",
+      "relation": "presenter"
+    },
+    {
+      "source": "2-minute-drill",
+      "target": "3doshas",
+      "relation": "representing"
+    },
+    {
+      "source": "2-minute-drill",
+      "target": "bloomberg",
+      "relation": "aired_on"
+    },
+    {
+      "source": "2-minute-drill",
+      "target": "apple-tv",
+      "relation": "aired_on"
+    },
+    {
+      "source": "2-minute-drill",
+      "target": "ja-worldwide",
+      "relation": "references"
+    },
+    {
+      "source": "vata",
+      "target": "3doshas-methodology",
+      "relation": "part_of"
+    },
+    {
+      "source": "vata",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "vata",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "three-doshas",
+      "target": "3doshas",
+      "relation": "foundational_to"
+    },
+    {
+      "source": "three-doshas",
+      "target": "3doshas-methodology",
+      "relation": "foundational_to"
+    },
+    {
+      "source": "three-doshas",
+      "target": "career-alignment-blueprint",
+      "relation": "foundational_to"
+    },
+    {
+      "source": "three-doshas",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "three-doshas",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "three-doshas",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "pitta",
+      "target": "3doshas-methodology",
+      "relation": "part_of"
+    },
+    {
+      "source": "pitta",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "pitta",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "kapha",
+      "target": "3doshas-methodology",
+      "relation": "part_of"
+    },
+    {
+      "source": "kapha",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "kapha",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "inner-intelligence",
+      "target": "3doshas-methodology",
+      "relation": "part_of"
+    },
+    {
+      "source": "inner-intelligence",
+      "target": "3doshas",
+      "relation": "used_by"
+    },
+    {
+      "source": "inner-intelligence",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "inner-intelligence",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "inner-intelligence",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "inner-intelligence",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "hyperpersonalization",
+      "target": "3doshas-methodology",
+      "relation": "part_of"
+    },
+    {
+      "source": "hyperpersonalization",
+      "target": "3doshas",
+      "relation": "used_by"
+    },
+    {
+      "source": "hyperpersonalization",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "hyperpersonalization",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "hyperpersonalization",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "hyperpersonalization",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "3doshas-methodology",
+      "relation": "part_of"
+    },
+    {
+      "source": "career-alignment",
+      "target": "3doshas",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "career-alignment-call",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "one-on-one-coaching",
+      "relation": "references"
+    },
+    {
+      "source": "career-alignment",
+      "target": "corporate-workshops",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "sumeet-syal",
+      "relation": "developed_by"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "nitu-syal",
+      "relation": "developed_by"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "3doshas",
+      "relation": "used_by"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "vata",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "pitta",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "kapha",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "career-alignment-blueprint",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "inner-intelligence",
+      "relation": "references"
+    },
+    {
+      "source": "3doshas-methodology",
+      "target": "hyperpersonalization",
+      "relation": "references"
+    }
+  ],
+  "stats": {
+    "totalNodes": 70,
+    "totalEdges": 326,
+    "untoldStories": 4,
+    "byType": {
+      "unknown": 1,
+      "story": 5,
+      "product": 6,
+      "post": 3,
+      "person": 4,
+      "organization": 29,
+      "event": 14,
+      "concept": 8
+    }
+  }
+}

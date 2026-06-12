@@ -1,5 +1,6 @@
 import { getBrandSystemPrompt } from "@/lib/brand-context";
 import { callLLMStructured, z } from "@/lib/llm";
+import { searchKnowledge, getEntity, getRelated } from "@/lib/kg-client";
 import type { PostProposal, PostDraft, AgentResponse } from "@/types";
 import { randomUUID } from "crypto";
 
@@ -52,10 +53,51 @@ DO NOT:
 - Use fewer than 8 hashtags
 - Sound like a LinkedIn growth-hacker`;
 
+function buildKgContext(topic: string): string {
+  const results = searchKnowledge(topic);
+  if (results.length === 0) return "";
+
+  const details: string[] = [];
+  const people: string[] = [];
+  const orgs: string[] = [];
+  const events: string[] = [];
+
+  for (const result of results.slice(0, 5)) {
+    const entity = getEntity(result.id);
+    if (!entity) continue;
+
+    details.push(`- ${entity.title}: ${entity.content.slice(0, 200).replace(/\n/g, " ").trim()}`);
+
+    if (entity.type === "person") people.push(entity.title);
+    if (entity.type === "organization") orgs.push(entity.title);
+    if (entity.type === "event" || entity.type === "story") events.push(entity.title);
+
+    // Also gather related entities for richer context
+    const related = getRelated(result.id, 1);
+    for (const rel of related.slice(0, 3)) {
+      if (rel.type === "person" && !people.includes(rel.title)) people.push(rel.title);
+      if (rel.type === "organization" && !orgs.includes(rel.title)) orgs.push(rel.title);
+    }
+  }
+
+  if (details.length === 0) return "";
+
+  let block = `\nREAL DETAILS FROM KNOWLEDGE GRAPH (use these specific details in the post):\n`;
+  block += details.join("\n") + "\n";
+  if (people.length > 0) block += `- People involved: ${people.join(", ")}\n`;
+  if (orgs.length > 0) block += `- Organizations: ${orgs.join(", ")}\n`;
+  if (events.length > 0) block += `- Key events/stories: ${events.join(", ")}\n`;
+  block += `\nUse these REAL details instead of inventing generic examples. Name real people, real institutions, real events.\n`;
+
+  return block;
+}
+
 export async function writePost(
   proposal: PostProposal
 ): Promise<AgentResponse<PostDraft>> {
   const systemPrompt = getBrandSystemPrompt(AGENT_ROLE);
+
+  const kgContext = buildKgContext(proposal.topic);
 
   const { data, tokensUsed } = await callLLMStructured({
     systemPrompt,
@@ -67,7 +109,7 @@ NARRATIVE OUTLINE: ${proposal.bodyOutline}
 TARGET: ${proposal.targetSegment}
 POST TYPE: ${proposal.postType}
 CONTENT PILLAR: ${proposal.contentPillar}
-
+${kgContext}
 Write the full post as Sumeet Syal. Follow the SCENE → NARRATIVE → THEME → GRATITUDE → INVITATION structure. 250-400 words.
 
 IMPORTANT: Put the post text in the "content" field and hashtags ONLY in the "hashtags" array. Do NOT include hashtags inside the content field. 8-12 hashtags.`,
@@ -97,6 +139,10 @@ export async function rewritePost(
 ): Promise<AgentResponse<PostDraft>> {
   const systemPrompt = getBrandSystemPrompt(AGENT_ROLE);
 
+  // Extract a topic hint from the draft content for KG search
+  const topicHint = draft.content.split("\n").find((line) => line.trim().length > 10)?.trim() ?? "";
+  const rewriteKgContext = buildKgContext(topicHint);
+
   const { data, tokensUsed } = await callLLMStructured({
     systemPrompt,
     userPrompt: `Rewrite this LinkedIn post based on feedback:
@@ -105,7 +151,7 @@ CURRENT POST:
 ${draft.content}
 
 FEEDBACK: ${feedback}
-
+${rewriteKgContext}
 Apply the feedback while maintaining Sumeet's voice. Keep the SCENE → NARRATIVE → THEME → GRATITUDE → INVITATION structure.`,
     schema: DraftSchema,
     schemaName: "LinkedInPost",

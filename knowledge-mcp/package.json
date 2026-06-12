@@ -1,0 +1,20 @@
+{
+  "name": "3doshas-knowledge-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that serves the 3Doshas Obsidian vault as a knowledge graph",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "glob": "^11.0.2",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

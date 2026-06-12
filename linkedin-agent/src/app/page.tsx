@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import type { PostProposal, PostDraft, InterviewQuestion, PipelineStep } from "@/types";
 import LinkedInPreview from "@/components/preview/LinkedInPreview";
 import StepProgress from "@/components/create/StepProgress";
@@ -244,6 +245,10 @@ export default function Dashboard() {
                   {t === "auto" ? "Pipeline" : "Guided"}
                 </button>
               ))}
+              <Link href="/knowledge"
+                className="rounded px-4 py-1.5 text-sm font-medium text-gray-500 hover:text-gray-300 transition-all duration-150">
+                Knowledge
+              </Link>
             </div>
 
             <button onClick={() => setShowLogs(!showLogs)}
