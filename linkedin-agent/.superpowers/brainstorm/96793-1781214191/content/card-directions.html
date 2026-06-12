@@ -1,0 +1,379 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  .design-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .direction {
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  .direction:hover {
+    transform: translateY(-2px);
+  }
+  .direction.selected {
+    outline: 2px solid #e5e5e5;
+    outline-offset: 8px;
+  }
+
+  .direction-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .direction-label::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #555;
+  }
+
+  /* ---- DIRECTION A: Editorial ---- */
+  .card-a {
+    background: #111;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  .card-a .card-inner {
+    padding: 28px 32px 24px;
+    border-left: 2px solid #333;
+    margin-left: 0;
+  }
+  .card-a .card-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .card-a .card-meta .sep {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #444;
+    flex-shrink: 0;
+  }
+  .card-a .card-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 22px;
+    line-height: 1.3;
+    color: #f0f0f0;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+  }
+  .card-a .card-hook {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 560px;
+  }
+  .card-a .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-a .card-action {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #f0f0f0;
+    background: none;
+    border: 1px solid #333;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.02em;
+  }
+  .card-a .card-action:hover {
+    border-color: #666;
+    background: #1a1a1a;
+  }
+  .card-a .card-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #444;
+    letter-spacing: 0.04em;
+  }
+
+  /* ---- DIRECTION B: Swiss Grid ---- */
+  .card-b {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .card-b .card-inner {
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    gap: 0;
+  }
+  .card-b .card-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 32px;
+    font-weight: 500;
+    color: #222;
+    padding: 24px 0 24px 20px;
+    line-height: 1;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 28px;
+  }
+  .card-b .card-body {
+    padding: 24px 20px;
+    border-left: 1px solid #1a1a1a;
+  }
+  .card-b .card-type {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #e0e0e0;
+    background: #1a1a1a;
+    display: inline-block;
+    padding: 3px 8px;
+    margin-bottom: 10px;
+  }
+  .card-b .card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #e8e8e8;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .card-b .card-hook {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+  }
+  .card-b .card-side {
+    padding: 24px 20px;
+    border-left: 1px solid #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100px;
+  }
+  .card-b .card-pillar {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #444;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+  }
+  .card-b .card-action {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #000;
+    background: #e8e8e8;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.02em;
+  }
+  .card-b .card-action:hover {
+    background: #fff;
+  }
+
+  /* ---- DIRECTION C: Quiet Functional ---- */
+  .card-c {
+    background: transparent;
+    padding: 0;
+    border-bottom: 1px solid #1a1a1a;
+    border-radius: 0;
+  }
+  .card-c .card-inner {
+    padding: 24px 0;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .card-c .card-content {
+    flex: 1;
+    min-width: 0;
+  }
+  .card-c .card-top {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .card-c .card-type {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #888;
+  }
+  .card-c .card-pillar {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: #444;
+  }
+  .card-c .card-pillar::before {
+    content: '/';
+    margin-right: 10px;
+    color: #333;
+  }
+  .card-c .card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #e0e0e0;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .card-c .card-hook {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #555;
+  }
+  .card-c .card-actions {
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+  .card-c .card-action {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    background: none;
+    border: none;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: color 0.15s ease;
+    letter-spacing: 0.01em;
+    text-decoration: underline;
+    text-decoration-color: #333;
+    text-underline-offset: 3px;
+  }
+  .card-c .card-action:hover {
+    color: #e0e0e0;
+    text-decoration-color: #666;
+  }
+
+  .desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 24px;
+    max-width: 560px;
+  }
+</style>
+
+<h2 style="font-family: 'DM Sans', sans-serif; letter-spacing: -0.02em;">Card Design Direction</h2>
+<p class="subtitle" style="font-family: 'DM Sans', sans-serif;">Click the one that feels right. We'll refine from there.</p>
+
+<div class="design-grid">
+
+  <!-- Direction A: Editorial -->
+  <div class="direction" data-choice="editorial" onclick="toggleSelect(this)">
+    <div class="direction-label">A — Editorial</div>
+    <p class="desc">Serif titles, restrained palette, left accent line. Feels like a publication — content-first, typographically led.</p>
+    <div class="card-a">
+      <div class="card-inner">
+        <div class="card-meta">
+          <span>Thought Leadership</span>
+          <span class="sep"></span>
+          <span>Leadership & Executive Dev</span>
+        </div>
+        <div class="card-title">The Death and Rebirth of Middle Management: Redefining Leadership Identity in the Age of AI Unbossing</div>
+        <div class="card-hook">I remember the first time an entire layer of management disappeared beneath me at Intel Corporation. It wasn't a restructuring memo that hit hardest — it was the look on a colleague's face...</div>
+        <div class="card-footer">
+          <button class="card-action">Write Post →</button>
+          <span class="card-status">Proposal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Direction B: Swiss Grid -->
+  <div class="direction" data-choice="swiss" onclick="toggleSelect(this)">
+    <div class="direction-label">B — Swiss Grid</div>
+    <p class="desc">Structured columns, index number, vertical category. Systematic and precise — information architecture over decoration.</p>
+    <div class="card-b">
+      <div class="card-inner">
+        <div class="card-number">01</div>
+        <div class="card-body">
+          <div class="card-type">Thought Leadership</div>
+          <div class="card-title">The Death and Rebirth of Middle Management: Redefining Leadership Identity in the Age of AI Unbossing</div>
+          <div class="card-hook">I remember the first time an entire layer of management disappeared beneath me at Intel Corporation...</div>
+        </div>
+        <div class="card-side">
+          <span class="card-pillar">Leadership & Executive Dev</span>
+          <button class="card-action">Write</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Direction C: Quiet Functional -->
+  <div class="direction" data-choice="quiet" onclick="toggleSelect(this)">
+    <div class="direction-label">C — Quiet Functional</div>
+    <p class="desc">No boxes, no borders, no decoration. Just text hierarchy and whitespace. The content IS the interface — everything else gets out of the way.</p>
+    <div class="card-c">
+      <div class="card-inner">
+        <div class="card-content">
+          <div class="card-top">
+            <span class="card-type">Thought Leadership</span>
+            <span class="card-pillar">Leadership & Executive Dev</span>
+          </div>
+          <div class="card-title">The Death and Rebirth of Middle Management: Redefining Leadership Identity in the Age of AI Unbossing</div>
+          <div class="card-hook">I remember the first time an entire layer of management disappeared beneath me at Intel Corporation. It wasn't a restructuring memo that hit hardest...</div>
+        </div>
+        <div class="card-actions">
+          <button class="card-action">Write Post</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-c">
+      <div class="card-inner">
+        <div class="card-content">
+          <div class="card-top">
+            <span class="card-type">Educational</span>
+            <span class="card-pillar">Career Alignment</span>
+          </div>
+          <div class="card-title">84% of Tech Workers Report Burnout — Why One-Size-Fits-All Wellness Advice Fails</div>
+          <div class="card-hook">A few years into my tenure as VP at Intel Corporation, I found myself sitting in my car in the parking lot for twenty minutes before walking into the building...</div>
+        </div>
+        <div class="card-actions">
+          <button class="card-action">Write Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

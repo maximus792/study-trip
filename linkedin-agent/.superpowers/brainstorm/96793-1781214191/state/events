@@ -1,0 +1,2 @@
+{"type":"click","text":"A — Sharp edges\n    Zero border radius. Pure Swiss. Structured and tool-like.","choice":"sharp","id":null,"timestamp":1781214539299}
+{"type":"click","text":"B — Subtle rounding\n    4px radius on outer container only. Same grid, slightly softer.","choice":"soft","id":null,"timestamp":1781214567739}

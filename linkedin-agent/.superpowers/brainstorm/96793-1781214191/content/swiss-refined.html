@@ -1,0 +1,331 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  .card-list {
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: #1a1a1a;
+    border: 1px solid #1a1a1a;
+  }
+
+  .card {
+    background: #0a0a0a;
+    overflow: hidden;
+    transition: background 0.15s ease;
+  }
+  .card:hover {
+    background: #0e0e0e;
+  }
+  .card.is-selected {
+    background: #0f0f0f;
+  }
+
+  .card-inner {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+  }
+
+  .card-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: 500;
+    color: #1e1e1e;
+    padding: 24px 0 24px 18px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 26px;
+    line-height: 1;
+  }
+  .card.is-selected .card-num {
+    color: #333;
+  }
+
+  .card-body {
+    padding: 22px 20px;
+    border-left: 1px solid #1a1a1a;
+    min-width: 0;
+  }
+
+  .card-type {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #999;
+    background: #161616;
+    display: inline-block;
+    padding: 3px 8px;
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #d8d8d8;
+    margin-bottom: 7px;
+    letter-spacing: -0.01em;
+  }
+  .card:hover .card-title {
+    color: #e8e8e8;
+  }
+
+  .card-hook {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #4a4a4a;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-side {
+    padding: 22px 18px;
+    border-left: 1px solid #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 96px;
+    gap: 12px;
+  }
+
+  .card-pillar {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #383838;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-action {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: #000;
+    background: #d0d0d0;
+    border: none;
+    padding: 7px 16px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .card-action:hover {
+    background: #e8e8e8;
+  }
+
+  .card-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .card-status .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #3a7;
+  }
+
+  .card.is-selected .card-body {
+    border-left-color: #e0e0e0;
+  }
+
+  .section-head {
+    max-width: 740px;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #888;
+    letter-spacing: -0.01em;
+  }
+  .section-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #444;
+    letter-spacing: 0.04em;
+  }
+
+  .note {
+    max-width: 740px;
+    margin: 24px auto 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .note strong {
+    color: #666;
+  }
+
+  .options-row {
+    display: flex;
+    gap: 16px;
+    max-width: 740px;
+    margin: 32px auto 0;
+  }
+  .opt {
+    flex: 1;
+    padding: 16px 20px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    background: #0a0a0a;
+  }
+  .opt:hover {
+    border-color: #444;
+    background: #111;
+  }
+  .opt.selected {
+    border-color: #888;
+    background: #111;
+  }
+  .opt-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 6px;
+  }
+  .opt-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.5;
+  }
+</style>
+
+<h2 style="font-family: 'DM Sans', sans-serif; letter-spacing: -0.02em;">Swiss Grid — Refined</h2>
+<p class="subtitle" style="font-family: 'DM Sans', sans-serif;">Multiple cards with different states. How does this feel as a working list?</p>
+
+<div class="section-head">
+  <span class="section-title">Proposals</span>
+  <span class="section-count">5 proposals · 1 drafted</span>
+</div>
+
+<div class="card-list">
+  <!-- Card 1: Has draft, currently selected -->
+  <div class="card is-selected">
+    <div class="card-inner">
+      <div class="card-num">01</div>
+      <div class="card-body">
+        <div class="card-type">Thought Leadership</div>
+        <div class="card-title">The Death and Rebirth of Middle Management: Redefining Leadership Identity in the Age of AI Unbossing</div>
+        <div class="card-hook">I remember the first time an entire layer of management disappeared beneath me at Intel Corporation. It wasn't a restructuring memo that hit hardest — it was the look on a colleague's face when he realized the title he'd spent fifteen years earning no longer existed.</div>
+      </div>
+      <div class="card-side">
+        <span class="card-pillar">Leadership & Exec Dev</span>
+        <span class="card-status"><span class="dot"></span> Draft ready</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2: No draft yet -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-num">02</div>
+      <div class="card-body">
+        <div class="card-type">Educational</div>
+        <div class="card-title">84% of Tech Workers Report Burnout — Why One-Size-Fits-All Wellness Advice Fails and Dosha-Based Energy Management Is the Missing Piece</div>
+        <div class="card-hook">A few years into my tenure as VP at Intel Corporation, I found myself sitting in my car in the parking lot for twenty minutes before walking into the building. Not because I was early. Because I was exhausted in a way sleep couldn't fix.</div>
+      </div>
+      <div class="card-side">
+        <span class="card-pillar">Career Alignment</span>
+        <button class="card-action">Write</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-num">03</div>
+      <div class="card-body">
+        <div class="card-type">Case Study</div>
+        <div class="card-title">How a Fortune 500 VP Used Ancient Ayurvedic Principles to Transform Her Team's Productivity by 40%</div>
+        <div class="card-hook">When Sarah first walked into my coaching session, she was running on caffeine and cortisol. Three months later, her entire leadership style had shifted.</div>
+      </div>
+      <div class="card-side">
+        <span class="card-pillar">Wellness at Work</span>
+        <button class="card-action">Write</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-num">04</div>
+      <div class="card-body">
+        <div class="card-type">Trending Topic</div>
+        <div class="card-title">The Return-to-Office Debate Is Missing the Point — Here's What Leaders Should Actually Be Asking</div>
+        <div class="card-hook">Every week brings another headline about RTO mandates. But the real question isn't where people work — it's whether your leadership model still works at all.</div>
+      </div>
+      <div class="card-side">
+        <span class="card-pillar">Leadership & Exec Dev</span>
+        <button class="card-action">Write</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-num">05</div>
+      <div class="card-body">
+        <div class="card-type">Event CTA</div>
+        <div class="card-title">Join Me at the SJSU Leadership Summit — Let's Talk About What "Executive Presence" Really Means in 2026</div>
+        <div class="card-hook">I've been invited to speak at San Jose State's annual Leadership Summit this March. The topic they gave me was executive presence — but I'm going to talk about something different.</div>
+      </div>
+      <div class="card-side">
+        <span class="card-pillar">Events</span>
+        <button class="card-action">Write</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="note">
+  <strong>Card 01</strong> is selected (white left border) with a draft ready. Cards 02–05 are pending proposals with the "Write" action.
+</div>
+
+<h3 style="font-family: 'DM Sans', sans-serif; margin-top: 40px; letter-spacing: -0.01em;">One thing to decide:</h3>
+<p class="subtitle" style="font-family: 'DM Sans', sans-serif;">Should we keep sharp square edges or soften them?</p>
+
+<div class="options-row">
+  <div class="opt" data-choice="sharp" onclick="toggleSelect(this)">
+    <div class="opt-label">A — Sharp edges</div>
+    <div class="opt-desc">Zero border radius. Pure Swiss. Structured and tool-like.</div>
+  </div>
+  <div class="opt" data-choice="soft" onclick="toggleSelect(this)">
+    <div class="opt-label">B — Subtle rounding</div>
+    <div class="opt-desc">4px radius on outer container only. Same grid, slightly softer.</div>
+  </div>
+</div>
