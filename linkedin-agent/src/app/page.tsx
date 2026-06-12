@@ -1,13 +1,12 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
 import type { PostProposal, PostDraft, InterviewQuestion, PipelineStep } from "@/types";
 import LinkedInPreview from "@/components/preview/LinkedInPreview";
 import StepProgress from "@/components/create/StepProgress";
 import InterviewCard from "@/components/create/InterviewCard";
 import PipelineViz from "@/components/pipeline/PipelineViz";
-import Logo3Doshas from "@/components/brand/Logo3Doshas";
+import Navbar from "@/components/shared/Navbar";
 
 type Tab = "auto" | "manual";
 type ManualStep = "idea" | "interview" | "review" | "result";
@@ -224,51 +223,27 @@ export default function Dashboard() {
 
   return (
     <main className="min-h-screen" style={{ background: "var(--bg-base)" }}>
-      {/* Header */}
-      <header className="relative border-b" style={{ borderColor: "var(--border-subtle)", background: "var(--bg-surface)" }}>
-        <div className="absolute bottom-0 left-0 right-0 h-[2px]" style={{ background: "linear-gradient(90deg, transparent 0%, var(--accent-orange) 50%, transparent 100%)", opacity: 0.4 }} />
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-4">
-          <Logo3Doshas size={36} />
-
-          <div className="flex items-center gap-3">
-            <div className="flex rounded-lg p-1" style={{ background: "var(--bg-base)", border: "1px solid var(--border-subtle)" }}>
-              {(["auto", "manual"] as const).map((t) => (
-                <button key={t} onClick={() => setTab(t)}
-                  className="rounded-md px-4 py-1.5 text-sm font-medium transition-all duration-200"
-                  style={tab === t ? {
-                    background: "linear-gradient(135deg, var(--accent-orange), #E86520)",
-                    color: "white",
-                    boxShadow: "0 2px 8px rgba(255,119,51,0.25)"
-                  } : {
-                    color: "var(--text-muted)",
-                  }}>
-                  {t === "auto" ? "Pipeline" : "Guided"}
-                </button>
-              ))}
-              <Link href="/knowledge"
-                className="rounded px-4 py-1.5 text-sm font-medium text-gray-500 hover:text-gray-300 transition-all duration-150">
-                Knowledge
-              </Link>
-            </div>
-
-            <button onClick={() => setShowLogs(!showLogs)}
-              className="relative rounded-lg px-3 py-1.5 text-xs font-medium transition-all duration-200"
-              style={{
-                background: showLogs ? "var(--bg-elevated)" : "var(--bg-base)",
-                border: `1px solid ${showLogs ? "var(--border-medium)" : "var(--border-subtle)"}`,
-                color: showLogs ? "var(--text-primary)" : "var(--text-muted)",
-              }}>
-              Activity
-              {agentLogs.length > 0 && (
-                <span className="absolute -right-1.5 -top-1.5 flex h-4 min-w-4 items-center justify-center rounded-full px-1 text-[10px] font-bold text-white"
-                  style={{ background: "var(--accent-orange)" }}>
-                  {agentLogs.length}
-                </span>
-              )}
-            </button>
-          </div>
-        </div>
-      </header>
+      <Navbar
+        activeTab={tab}
+        onTabChange={setTab}
+        rightContent={
+          <button onClick={() => setShowLogs(!showLogs)}
+            className="relative rounded-lg px-3 py-1.5 text-xs font-medium transition-all duration-200"
+            style={{
+              background: showLogs ? "var(--bg-elevated)" : "var(--bg-base)",
+              border: `1px solid ${showLogs ? "var(--border-medium)" : "var(--border-subtle)"}`,
+              color: showLogs ? "var(--text-primary)" : "var(--text-muted)",
+            }}>
+            Activity
+            {agentLogs.length > 0 && (
+              <span className="absolute -right-1.5 -top-1.5 flex h-4 min-w-4 items-center justify-center rounded-full px-1 text-[10px] font-bold text-white"
+                style={{ background: "var(--accent-orange)" }}>
+                {agentLogs.length}
+              </span>
+            )}
+          </button>
+        }
+      />
 
       <div className="mx-auto max-w-7xl p-6">
         {/* Error banner */}

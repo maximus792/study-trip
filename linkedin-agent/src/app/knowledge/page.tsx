@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import dynamic from "next/dynamic";
-import Link from "next/link";
+import Navbar from "@/components/shared/Navbar";
 
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), {
   ssr: false,
@@ -176,35 +176,8 @@ export default function KnowledgePage() {
     : [];
 
   return (
-    <main className="flex h-screen flex-col bg-[#09090b] text-gray-200">
-      {/* Header — matches original page.tsx */}
-      <header className="border-b border-[#1a1a1a]">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded bg-white text-sm font-black text-black">3D</div>
-            <div>
-              <h1 className="text-lg font-bold tracking-tight">
-                <span className="text-white">3Doshas</span>
-                <span className="ml-1.5 text-gray-500">LinkedIn Agent</span>
-              </h1>
-              <p className="text-[11px] text-gray-600 -mt-0.5">Knowledge graph</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="flex rounded bg-[#111] p-1 border border-[#1a1a1a]">
-              <Link href="/" className="rounded px-4 py-1.5 text-sm font-medium text-gray-500 hover:text-gray-300 transition-all duration-150">
-                Auto Flow
-              </Link>
-              <Link href="/" className="rounded px-4 py-1.5 text-sm font-medium text-gray-500 hover:text-gray-300 transition-all duration-150">
-                Manual Flow
-              </Link>
-              <span className="rounded px-4 py-1.5 text-sm font-medium bg-white text-black">
-                Knowledge
-              </span>
-            </div>
-          </div>
-        </div>
-      </header>
+    <main className="flex h-screen flex-col text-gray-200" style={{ background: "var(--bg-base)" }}>
+      <Navbar activeTab="knowledge" />
 
       {/* Controls bar */}
       <div className="shrink-0 border-b border-[#1a1a1a] px-6 py-2.5">
