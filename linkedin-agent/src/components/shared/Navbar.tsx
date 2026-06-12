@@ -31,7 +31,7 @@ export default function Navbar({ activeTab, onTabChange, rightContent }: NavbarP
         <div className="flex items-center gap-3">
           <div className="flex rounded-lg p-1" style={{ background: "var(--bg-base)", border: "1px solid var(--border-subtle)" }}>
             {activeTab === "knowledge" ? (
-              <Link href="/"
+              <Link href="/?tab=auto"
                 className="rounded-md px-4 py-1.5 text-sm font-medium transition-all duration-200"
                 style={INACTIVE_STYLE}>
                 Pipeline
@@ -46,7 +46,7 @@ export default function Navbar({ activeTab, onTabChange, rightContent }: NavbarP
             )}
 
             {activeTab === "knowledge" ? (
-              <Link href="/"
+              <Link href="/?tab=manual"
                 className="rounded-md px-4 py-1.5 text-sm font-medium transition-all duration-200"
                 style={INACTIVE_STYLE}>
                 Guided

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { Suspense, useState, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 import type { PostProposal, PostDraft, InterviewQuestion, PipelineStep } from "@/types";
 import LinkedInPreview from "@/components/preview/LinkedInPreview";
 import StepProgress from "@/components/create/StepProgress";
@@ -13,8 +14,20 @@ type ManualStep = "idea" | "interview" | "review" | "result";
 
 interface AgentLog { agent: string; tokensUsed: number; timestamp: string; }
 
-export default function Dashboard() {
-  const [tab, setTab] = useState<Tab>("auto");
+export default function DashboardPage() {
+  return (
+    <Suspense>
+      <Dashboard />
+    </Suspense>
+  );
+}
+
+function Dashboard() {
+  const searchParams = useSearchParams();
+  const [tab, setTab] = useState<Tab>(() => {
+    const t = searchParams.get("tab");
+    return t === "manual" ? "manual" : "auto";
+  });
   const [loading, setLoading] = useState(false);
   const [statusMsg, setStatusMsg] = useState("");
   const [error, setError] = useState<string | null>(null);
