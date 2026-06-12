@@ -1,0 +1,746 @@
+- generic [ref=e3]:
+  - region "top of page" [active]
+  - button "Skip to Main Content"
+  - generic [ref=e10]:
+    - banner [ref=e11]:
+      - generic [ref=e23]:
+        - generic:
+          - generic:
+            - link "Screenshot 2025-03-12 155345.png" [ref=e28] [cursor=pointer]:
+              - /url: https://www.3doshas.com
+              - img "Screenshot 2025-03-12 155345.png" [ref=e29]
+            - button "Log In" [ref=e31] [cursor=pointer]:
+              - img [ref=e35]
+              - generic [ref=e38]: Log In
+            - button "Cart with 0 items" [ref=e1141] [cursor=pointer]:
+              - img [ref=e44]:
+                - generic [ref=e1142]: "0"
+            - img "Screenshot 2025-03-12 155345.png" [ref=e50]
+            - navigation "Site" [ref=e52]:
+              - list [ref=e53]:
+                - listitem [ref=e54] [cursor=pointer]:
+                  - link "Home" [ref=e55]:
+                    - /url: https://www.3doshas.com
+                    - paragraph [ref=e58]: Home
+                - listitem [ref=e59] [cursor=pointer]:
+                  - link "Coaching" [ref=e60]:
+                    - /url: https://www.3doshas.com/coaching
+                    - paragraph [ref=e63]: Coaching
+                - listitem [ref=e64] [cursor=pointer]:
+                  - link "Consulting" [ref=e65]:
+                    - /url: https://www.3doshas.com/consulting
+                    - paragraph [ref=e68]: Consulting
+                - listitem [ref=e69] [cursor=pointer]:
+                  - link "Programs" [ref=e70]:
+                    - /url: https://www.3doshas.com/programs
+                    - paragraph [ref=e73]: Programs
+                - listitem [ref=e74] [cursor=pointer]:
+                  - link "Events" [ref=e75]:
+                    - /url: https://www.3doshas.com/sessions
+                    - paragraph [ref=e78]: Events
+                - listitem [ref=e79] [cursor=pointer]:
+                  - link "Members" [ref=e80]:
+                    - /url: https://www.3doshas.com/community
+                    - paragraph [ref=e83]: Members
+                - listitem [ref=e84] [cursor=pointer]:
+                  - link "About" [ref=e85]:
+                    - /url: https://www.3doshas.com/about-us
+                    - paragraph [ref=e88]: About
+                - listitem [ref=e89] [cursor=pointer]:
+                  - paragraph [ref=e93]: More
+    - main [ref=e94]:
+      - generic [ref=e99]:
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=e100]:
+                - generic:
+                  - generic:
+                    - img "Final_3Doshas_Logo.png" [ref=e106]
+                    - heading "Level Up with 3Doshas Science" [level=1] [ref=e107]:
+                      - generic [ref=e111]: Level Up with 3Doshas Science
+                    - heading "An Award-Winning Platform Transforming Careers" [level=1] [ref=e112]:
+                      - generic [ref=e116]: An Award-Winning Platform Transforming Careers
+              - generic [ref=e121]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading "Stop forcing yourself into careers that don't fit. Start amplifying your professional brilliance." [level=6] [ref=e123]:
+                        - generic [ref=e127]: Stop forcing yourself into careers that don't fit. Start amplifying your professional brilliance.
+                      - paragraph [ref=e128]:
+                        - generic [ref=e130]:
+                          - text: Get a Doshas-based career diagnostic that shows you
+                          - text: why your work feels misaligned — and what to change next.
+                      - paragraph [ref=e131]
+                      - paragraph [ref=e132]
+                      - paragraph [ref=e133]:
+                        - generic [ref=e134]:
+                          - generic [ref=e137]: Want Guidance?
+                          - generic [ref=e141]:
+                            - text: →
+                            - link "Book a Career Alignment Call" [ref=e143] [cursor=pointer]:
+                              - /url: https://www.3doshas.com
+                      - paragraph [ref=e144]:
+                        - generic [ref=e149]:
+                          - text: Already Clear? →
+                          - link "Apply for 1:1 Coaching" [ref=e151] [cursor=pointer]:
+                            - /url: https://www.3doshas.com
+                      - paragraph [ref=e152]
+                      - paragraph [ref=e153]:
+                        - generic [ref=e157]:
+                          - link "Not ready yet?" [ref=e158] [cursor=pointer]:
+                            - /url: https://www.3doshas.com
+                          - link "→ Take the free 3-minute diagnostic below" [ref=e159] [cursor=pointer]:
+                            - /url: https://www.3doshas.com
+                    - link "Get My Career Alignment Blueprint - $66" [ref=e161] [cursor=pointer]:
+                      - /url: https://www.3doshas.com
+                      - generic [ref=e162]:
+                        - generic [ref=e163]: Get My Career Alignment Blueprint - $66
+                        - img [ref=e166]
+              - generic [ref=e169]:
+                - generic:
+                  - generic:
+                    - heading "3Doshas 3 Step Plan" [level=2] [ref=e173]:
+                      - generic [ref=e175]: 3Doshas 3 Step Plan
+                    - heading "Choose the Level of Support That Fits You." [level=1] [ref=e176]:
+                      - generic [ref=e180]: Choose the Level of Support That Fits You.
+                    - generic:
+                      - paragraph [ref=e181]:
+                        - generic [ref=e182]: How People Use 3Doshas to fast-track their professional life.
+                      - paragraph [ref=e183]:
+                        - generic [ref=e185]: Step 1 — Career Alignment Blueprint (Self-Guided Diagnostic)
+                      - paragraph [ref=e186]: Get clarity on your strengths & challenges with a 30-Day action-plan.
+                      - paragraph [ref=e187]:
+                        - generic [ref=e189]: Step 2 — Career Alignment Call (Optional Guided Conversation)
+                      - paragraph [ref=e190]: Discuss your Blueprint patterns and get guidance on next moves.
+                      - paragraph [ref=e191]:
+                        - generic [ref=e193]: Step 3 — 1on1 Coaching (Selective High-Touch Support)
+                      - paragraph [ref=e194]: Implement aligned changes consistently — and level up with clarity and intention.
+                    - generic [ref=e200]:
+                      - img "00DAA91A-B4EB-4FD7-9D4F-495BEFB5F6B7_edited.jpg" [ref=e205]
+                      - generic:
+                        - generic:
+                          - generic [ref=e206]:
+                            - generic:
+                              - generic:
+                                - paragraph [ref=e210]:
+                                  - generic [ref=e212]: "1"
+                                - heading "Career Alignment Blueprint" [level=3] [ref=e213]:
+                                  - generic [ref=e214]: Career Alignment Blueprint
+                                - generic:
+                                  - paragraph [ref=e215]:
+                                    - generic [ref=e218]: Unlock your built-in professional strengths with a 30-Day action-plan. Get a personalized Career Alignment Blueprint that uses dosha-based patterns to map a practical career path aligned with how your mind–body works best.
+                                  - paragraph [ref=e219]
+                                  - paragraph [ref=e220]: "Best if you want:"
+                                  - list [ref=e221]:
+                                    - listitem [ref=e222]:
+                                      - paragraph [ref=e223]: clarity before committing
+                                    - listitem [ref=e224]:
+                                      - paragraph [ref=e225]: concrete next steps vs. guessing
+                                    - listitem [ref=e226]:
+                                      - paragraph [ref=e227]: 30-Day career alignment plan
+                                - link "Get My Blueprint Now" [ref=e229] [cursor=pointer]:
+                                  - /url: https://www.3doshas.com/challenge-page/45ce40f5-ba0d-4662-8562-ec340d9a4f9d?programId=45ce40f5-ba0d-4662-8562-ec340d9a4f9d
+                                  - generic [ref=e231]: Get My Blueprint Now
+                                - generic "eec100_35d3bf1e95ac4f1782ebb71a0ed79b9a~mv2.png" [ref=e232]:
+                                  - img "Screenshot 2026-01-03 at 10.37.02 AM.png" [ref=e234]
+                          - generic [ref=e235]:
+                            - generic:
+                              - generic:
+                                - paragraph [ref=e239]:
+                                  - generic [ref=e241]: "2"
+                                - heading "Career Alignment Call" [level=3] [ref=e242]
+                                - generic:
+                                  - paragraph [ref=e243]: Accelerate you career growth. Book a Career Alignment Call to see how our data-driven approach applies your leadership traits and Blueprint insights, translating them into practical steps toward your next role or promotion.
+                                  - paragraph [ref=e244]
+                                  - paragraph [ref=e245]: "Best if you want:"
+                                  - list [ref=e246]:
+                                    - listitem [ref=e247]:
+                                      - paragraph [ref=e248]: live clarity with results
+                                    - listitem [ref=e249]:
+                                      - paragraph [ref=e250]: help interpreting your Blueprint
+                                    - listitem [ref=e251]:
+                                      - paragraph [ref=e252]: advice before deciding next steps
+                                - link "Book Now" [ref=e254] [cursor=pointer]:
+                                  - /url: https://www.3doshas.com/coaching
+                                  - generic [ref=e256]: Book Now
+                                - generic "eec100_cfb8972091ee4bfaa49110301e5458b8~mv2.png" [ref=e257]:
+                                  - img "Screenshot 2025-07-23 at 10.17.28 PM.png" [ref=e259]
+                          - generic [ref=e260]:
+                            - generic:
+                              - generic:
+                                - paragraph [ref=e264]:
+                                  - generic [ref=e266]: "3"
+                                - heading "1on1 Coaching" [level=3] [ref=e267]:
+                                  - generic [ref=e268]: 1on1 Coaching
+                                - generic:
+                                  - paragraph [ref=e269]:
+                                    - generic [ref=e271]: Elevate your Leadership. Engage in custom-designed professional development—delivered one-on-one or in small cohorts—with access to exclusive networking opportunities and support in leveraging employer benefits for executive growth.
+                                  - paragraph [ref=e272]
+                                  - paragraph [ref=e273]: "Best if you:"
+                                  - list [ref=e274]:
+                                    - listitem [ref=e275]:
+                                      - paragraph [ref=e276]: already know you’re misaligned
+                                    - listitem [ref=e277]:
+                                      - paragraph [ref=e278]: want structure and accountability
+                                    - listitem [ref=e279]:
+                                      - paragraph [ref=e280]: are ready to level-up and act now
+                                - link "Apply Now" [ref=e282] [cursor=pointer]:
+                                  - /url: https://www.3doshas.com/coaching
+                                  - generic [ref=e284]: Apply Now
+                                - generic "eec100_b9fec923057b466382516ebe2b74cf15~mv2.png" [ref=e285]:
+                                  - img "Screenshot 2025-07-23 at 10.19.36 PM.png" [ref=e287]
+                          - paragraph [ref=e288]:
+                            - generic [ref=e292]: Prefer to explore first? → Take the free 3-minute diagnostic below
+              - generic [ref=e297]:
+                - generic:
+                  - generic:
+                    - iframe [ref=e1144]:
+                      - generic [active] [ref=f3e1]:
+                        - generic [ref=f3e3]:
+                          - table [ref=f3e4]:
+                            - rowgroup [ref=f3e5]:
+                              - row "0 1 0 , 1 0 1 0 1 0 1 " [ref=f3e6]:
+                                - cell "0 1" [ref=f3e7]:
+                                  - generic [ref=f3e8]:
+                                    - generic [ref=f3e10]:
+                                      - generic: "0"
+                                    - generic [ref=f3e12]:
+                                      - generic: "1"
+                                - cell "0 , 1" [ref=f3e13]:
+                                  - generic [ref=f3e14]:
+                                    - generic [ref=f3e16]:
+                                      - generic: "0"
+                                      - generic: ","
+                                    - generic [ref=f3e18]:
+                                      - generic: "1"
+                                - cell "0 1" [ref=f3e19]:
+                                  - generic [ref=f3e20]:
+                                    - generic [ref=f3e22]:
+                                      - generic: "0"
+                                    - generic [ref=f3e24]:
+                                      - generic: "1"
+                                - cell "0 1" [ref=f3e25]:
+                                  - generic [ref=f3e26]:
+                                    - generic [ref=f3e28]:
+                                      - generic: "0"
+                                    - generic [ref=f3e30]:
+                                      - generic: "1"
+                                - cell "0 1" [ref=f3e31]:
+                                  - generic [ref=f3e32]:
+                                    - generic [ref=f3e34]:
+                                      - generic: "0"
+                                    - generic [ref=f3e36]:
+                                      - generic: "1"
+                                - cell "" [ref=f3e37] [cursor=pointer]:
+                                  - table [ref=f3e39]:
+                                    - rowgroup [ref=f3e40]:
+                                      - row "" [ref=f3e41]:
+                                        - cell "" [ref=f3e42]:
+                                          - link "" [ref=f3e43]:
+                                            - /url: https://www.powr.io/hit-counter-website-app?utm_src=watermark-hit-counter
+                                            - generic [ref=f3e44]: 
+                          - generic [ref=f3e46]: New Visits
+                        - text: 
+                    - generic:
+                      - heading "Why we start with the Blueprint." [level=6] [ref=e299]:
+                        - generic [ref=e300]: Why we start with the Blueprint.
+                      - paragraph [ref=e301]:
+                        - generic [ref=e302]: The free diagnostic gives a snapshot.
+                      - paragraph [ref=e303]:
+                        - generic [ref=e304]: The blueprint gives clarity, context, and direction.
+                      - paragraph [ref=e305]:
+                        - generic [ref=e306]: Coaching is most effective after you understand your patterns.
+                      - paragraph [ref=e307]
+                      - paragraph [ref=e308]:
+                        - generic [ref=e312]: Coaching Is Optional - Alignment Is Not.
+                    - link "Get My Career Alignment Blueprint - $66" [ref=e314] [cursor=pointer]:
+                      - /url: https://www.3doshas.com/challenge-page/45ce40f5-ba0d-4662-8562-ec340d9a4f9d?programId=45ce40f5-ba0d-4662-8562-ec340d9a4f9d
+                      - generic [ref=e315]:
+                        - generic [ref=e316]: Get My Career Alignment Blueprint - $66
+                        - img [ref=e319]
+              - iframe [ref=e1147]:
+                - generic [ref=f4e3]:
+                  - generic [ref=f4e4]:
+                    - progressbar [ref=f4e5]
+                    - generic: 1 / 14
+                  - generic [ref=f4e7]:
+                    - textbox "Skip to first element on page" [ref=f4e8]
+                    - button [ref=f4e13]
+                    - separator [ref=f4e18]
+                    - generic [ref=f4e20]:
+                      - heading "Discover Your 3Doshas! Free 3-minute Dosha Diagnostic." [level=1] [ref=f4e21]
+                      - heading "Get a quick snapshot of your Dosha energy patterns and how they show up in your work life. Designed to help you understand why work feels aligned — or why it doesn’t. This is your first step toward a clearer, more aligned career roadmap." [level=2] [ref=f4e22]
+                    - button "START NOW" [ref=f4e26] [cursor=pointer]
+                  - link "Made with involve.me Made with involve.me" [ref=f4e29] [cursor=pointer]:
+                    - /url: https://www.involve.me/?utm_source=involveme&utm_medium=referral&utm_campaign=watermark_project-corner&utm_content=3doshas%2F3doshasquiz
+                    - generic [ref=f4e30]:
+                      - img "Made with involve.me" [ref=f4e31]
+                      - generic [ref=f4e32]: Made with involve.me
+              - generic [ref=e327]:
+                - generic:
+                  - generic:
+                    - heading "Coporate Partnerships & Mentorships with" [level=2] [ref=e331]
+                    - region "Slider gallery" [ref=e332]:
+                      - button "play backward" [ref=e333] [cursor=pointer]
+                      - button "play forward" [ref=e334] [cursor=pointer]
+                      - generic [ref=e336]:
+                        - img [ref=e338]:
+                          - img [ref=e339]
+                          - img "PANW_Parent-logo" [ref=e343]
+                        - img [ref=e346]:
+                          - img [ref=e347]
+                          - img "google2.0.0.1441125613" [ref=e351]
+                        - img [ref=e354]:
+                          - img [ref=e355]
+                          - img "INTEL" [ref=e359]
+                        - img [ref=e362]:
+                          - img [ref=e363]
+                          - img "Adobe_logo" [ref=e367]
+                        - img [ref=e370]:
+                          - img [ref=e371]
+                          - img "Personio" [ref=e375]
+                        - img [ref=e378]:
+                          - img [ref=e379]
+                          - img "Atlassian" [ref=e383]
+                        - img [ref=e386]:
+                          - img [ref=e387]
+                          - img "ey" [ref=e391]
+                        - img [ref=e394]:
+                          - img [ref=e395]
+                          - img "servicenow-logo_brandlogos.net_aazvs" [ref=e399]
+                        - img [ref=e402]:
+                          - img [ref=e403]
+                          - img "remitly" [ref=e407]
+                        - img [ref=e410]:
+                          - img [ref=e411]
+                          - img "FHNW" [ref=e415]
+                        - img [ref=e418]:
+                          - img [ref=e419]
+                          - img "affinity.solutions" [ref=e423]
+                        - img [ref=e426]:
+                          - img [ref=e427]
+                          - img "Nanonets_logo_Logo" [ref=e431]
+                        - img [ref=e434]:
+                          - img [ref=e435]
+                          - img "PANW_Parent-logo" [ref=e439]
+                        - img [ref=e442]:
+                          - img [ref=e443]
+                          - img "google2.0.0.1441125613" [ref=e447]
+                        - img [ref=e450]:
+                          - img [ref=e451]
+                          - img "INTEL" [ref=e455]
+                        - img [ref=e458]:
+                          - img [ref=e459]
+                          - img "Adobe_logo" [ref=e463]
+                        - img [ref=e466]:
+                          - img [ref=e467]
+                          - img "Personio" [ref=e471]
+                        - img [ref=e474]:
+                          - img [ref=e475]
+                          - img "Atlassian" [ref=e479]
+                        - img [ref=e482]:
+                          - img [ref=e483]
+                          - img "ey" [ref=e487]
+                        - img [ref=e490]:
+                          - img [ref=e491]
+                          - img "servicenow-logo_brandlogos.net_aazvs" [ref=e495]
+                        - img [ref=e498]:
+                          - img [ref=e499]
+                          - img "remitly" [ref=e503]
+                        - img [ref=e506]:
+                          - img [ref=e507]
+                          - img "FHNW" [ref=e511]
+                        - img [ref=e514]:
+                          - img [ref=e515]
+                          - img "affinity.solutions" [ref=e519]
+                        - img [ref=e522]:
+                          - img [ref=e523]
+                          - img "Nanonets_logo_Logo" [ref=e527]
+                    - list [ref=e530]:
+                      - listitem [ref=e532]:
+                        - img "LUCAS.jpg" [ref=e539]
+                      - listitem [ref=e541]:
+                        - img "ucsc.jpg" [ref=e548]
+                      - listitem [ref=e550]:
+                        - img "BERK LOGO.jpg" [ref=e557]
+                    - img "SCLogo-Vertical-2-Rev-760x760.jpg" [ref=e560]
+                    - heading "Educational Partnerships with" [level=2] [ref=e561]
+              - generic [ref=e562]:
+                - generic:
+                  - generic:
+                    - generic [ref=e571]:
+                      - generic:
+                        - generic:
+                          - heading "Our Award-Winning Science Featured On" [level=2] [ref=e575]
+                          - link "Screen Shot 2022-05-05 at 7.14.57 PM.png" [ref=e577] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=sJixF01Ko5s
+                            - img "Screen Shot 2022-05-05 at 7.14.57 PM.png" [ref=e578]
+                          - link "Screen Shot 2022-05-05 at 7.15.49 PM.png" [ref=e580] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=sJixF01Ko5s
+                            - img "Screen Shot 2022-05-05 at 7.15.49 PM.png" [ref=e581]
+                          - link "Screen Shot 2022-05-03 at 9.21.29 PM.png" [ref=e583] [cursor=pointer]:
+                            - /url: https://www.youtube.com/c/ochakde
+                            - img "Screen Shot 2022-05-03 at 9.21.29 PM.png" [ref=e584]
+                          - link "download.jpg" [ref=e586] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=sJixF01Ko5s
+                            - img "download.jpg" [ref=e587]
+                          - link "TED LOGO.jpeg" [ref=e589] [cursor=pointer]:
+                            - /url: https://www.ted.com/talks/sachin_syal_how_to_find_your_passion_and_know_your_purpose
+                            - img "TED LOGO.jpeg" [ref=e590]
+                          - img "PunteCana Hits.png" [ref=e593]
+                          - link "download.png" [ref=e595] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=sJixF01Ko5s
+                            - img "download.png" [ref=e596]
+                          - link "unnamed (2).png" [ref=e598] [cursor=pointer]:
+                            - /url: https://youtu.be/cpqwYnYgq0M
+                            - img "unnamed (2).png" [ref=e599]
+                    - generic:
+                      - paragraph [ref=e600]:
+                        - generic [ref=e603]:
+                          - text: 3Doshas was selected as a global finalist and featured on Bloomberg & Apple TV series hit show 2 Minute Drill. We are thrilled that our co-founder & CMO, Sachin Syal, aired on national television and won the Prestigious Junior Achievement Worldwide Impact Award for 3Doshas Science. You can watch Sachin's National TV appearance at 16 years old on
+                          - link "our YouTube Channel!" [ref=e605] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=sJixF01Ko5s&t=1s
+                      - paragraph [ref=e606]
+              - generic [ref=e616]:
+                - generic:
+                  - generic:
+                    - heading "Meet Sumeet Syal" [level=2] [ref=e620]
+                    - paragraph [ref=e621]: Executive Coach & Mentor
+                    - list "Social Bar" [ref=e623]:
+                      - listitem [ref=e624]:
+                        - link "LinkedIn" [ref=e625] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/in/sumeet-syal-340452/
+                          - img "LinkedIn" [ref=e626]
+                    - img "Sumeet_333 (1).jpg" [ref=e629]
+                    - generic:
+                      - paragraph [ref=e630]: Sumeet Syal is an entrepreneur, tech executive, and educator with 30+ years of global experience across large corporations and Silicon Valley startups. He is the founder of 3DOSHAS, an award-winning coaching platform featured on Bloomberg and Apple TV+, where he designs and hosts high-impact leadership workshops for premier Silicon Valley companies—including Google, Intel, and Palo Alto Networks—partnering with executives to build high-performing teams and resilient corporate cultures. Most recently, Sumeet served as Vice President and General Manager at Intel Corporation, leading global sales, marketing, and technology alignment for Fortune 500 enterprises, hyperscalers, and AI service providers. He brings deep expertise in scaling new technologies and building strategic B2B partnerships across leading tech giants & enterprise verticals.
+                      - paragraph [ref=e631]
+                      - paragraph [ref=e632]: Sumeet started his career in engineering at Silicon Valley startups that were acquired by industry leaders. He then moved to Singapore, spearheading Intel's Asia-Pacific regional expansion and mastered Asian business practices & marketing as an expat. Later, he transitioned to product management, leading Intel's go-to-market strategy for smartphone & wearable products where his insights were featured in major publications like TechCrunch, EETimes, Business Insider, and ZDNet. Sumeet then pivoted to business-focused roles and went on to become Intel's Vice President & GM of Global Sales & Marketing. In this role, he closed high-stakes negotiations, securing multi-billion-dollar deals with tech giants such as Google, Apple, Dell, and HP. Over the course of his executive career, he guided many global teams across sales, marketing, business development, product management/marketing, and engineering.
+                      - paragraph [ref=e633]
+                      - paragraph [ref=e634]: Sumeet is a passionate leader, consistently ranked among top Intel executives for transforming large teams into high performing, resilient organizations. As a Stanford-trained executive in Leading Change & Organization Renewal and a UC Berkeley-Haas Certified Executive Coach, he now coaches Silicon Valley executives and their leadership teams. He serves as Adjunct Faculty teaching leadership & management of innovation at Santa Clara University’s (Graduate School of Engineering), and San José State University’s (Graduate School of Business). He holds dual MBAs from UCLA-Anderson and the National University of Singapore, and a BSc. in Computer Engineering from Cal Poly, SLO. Sumeet grew up in India’s Himalayas before moving to California. As a teen, he managed a McDonald’s, building a solid work ethic, and discovered his passion for tech through summer jobs at Fry’s Electronics. He began his professional career in technical roles, then excelled in business-focused roles, eventually becoming a high-level executive at Intel where he collaborated with top leaders from some of the biggest names in the industry. Inspired by his heritage, he developed 3DOSHAS — a science based methodology for coaching & mentorship that he and his team apply to empower team building, leadership, and building resilient cultures globally.
+                    - link "Book a Career Alignment Call" [ref=e636] [cursor=pointer]:
+                      - /url: https://www.3doshas.com/coaching
+                      - generic [ref=e638]: Book a Career Alignment Call
+              - region [ref=e649]:
+                - generic [ref=e651]:
+                  - generic [ref=e652] [cursor=pointer]:
+                    - button "image"
+                  - generic [ref=e658] [cursor=pointer]:
+                    - button
+              - generic [ref=e678]:
+                - generic [ref=e679]:
+                  - generic:
+                    - generic:
+                      - img [ref=e685]
+                      - generic:
+                        - paragraph [ref=e689]:
+                          - generic [ref=e690]: Kailash P.
+                        - paragraph [ref=e691]:
+                          - generic [ref=e692]: Google, Head Data Engineering & 3P Data
+                      - blockquote [ref=e693]:
+                        - generic [ref=e694]: "\"Great session on the 3Doshas Science at Google. I am huge fan of using Doshas blueprint alignment in my lifestyle, food, and work-life balance\""
+                - generic [ref=e695]:
+                  - generic:
+                    - generic:
+                      - img [ref=e701]
+                      - generic:
+                        - paragraph [ref=e705]:
+                          - generic [ref=e706]: Serena R.
+                        - paragraph [ref=e707]:
+                          - generic [ref=e708]: Ernst & Young, Financial Accounting Manager
+                      - blockquote [ref=e709]: “3Doshas blueprint provided great insights into my future career and shed light on how this ancient science has relevance in various facets, including the organizational realm”
+                - generic [ref=e710]:
+                  - generic:
+                    - generic:
+                      - img [ref=e716]
+                      - generic:
+                        - paragraph [ref=e720]:
+                          - generic [ref=e721]: Chelsea N.
+                        - paragraph [ref=e722]:
+                          - generic [ref=e723]: ServiceNow, Enterprise Marketing Associate
+                      - blockquote [ref=e724]: "\"The Career Alignment Blueprint gave me a brand new perspective in accelerating my marketing career. Thank you for an inspiring session and I loved hearing about 3Doshas science, \""
+                - generic [ref=e725]:
+                  - generic:
+                    - generic:
+                      - img [ref=e731]
+                      - generic:
+                        - paragraph [ref=e735]:
+                          - generic [ref=e736]: Tiffany D.
+                        - paragraph [ref=e737]:
+                          - generic [ref=e738]: Adobe, Data Analytics Program Manager
+                      - blockquote [ref=e739]:
+                        - generic [ref=e740]: "\"Blown away by the presentation today. I hope you won’t mind that I reach out more to learn about 3Doshas and receive your wonderful mentorship\""
+                - generic [ref=e741]:
+                  - generic:
+                    - generic:
+                      - img [ref=e747]
+                      - generic:
+                        - paragraph [ref=e751]:
+                          - generic [ref=e752]: Cami K.
+                        - paragraph [ref=e753]:
+                          - generic [ref=e754]: Google, Cloud Technical Account Manager
+                      - blockquote [ref=e755]:
+                        - generic [ref=e756]: "\"Really enjoyed your 3Doshas talk at Google today! The Blueprint alignment really resonated with me as I am a registered yoga teacher and a nutritionist.\""
+              - generic [ref=e757]:
+                - generic:
+                  - generic:
+                    - heading "3Doshas Events" [level=2] [ref=e761]:
+                      - generic [ref=e762]: 3Doshas Events
+                    - list [ref=e770]:
+                      - listitem [ref=e771]:
+                        - generic [ref=e772]:
+                          - 'img "Private Session: Career Success & Job Transition with 3Doshas strengths/energies. (4)" [ref=e778]'
+                          - generic [ref=e779]:
+                            - generic [ref=e780]:
+                              - 'link "Private Session: Career Success & Job Transition with 3Doshas strengths/energies. (4)" [ref=e781] [cursor=pointer]':
+                                - /url: https://www.3doshas.com/event-details/private-session-career-success-job-transition-with-3doshas-strengths-energies-4
+                              - generic [ref=e783]:
+                                - generic [ref=e784]: Date and time is TBD
+                                - generic [ref=e786]: RSVP to get ONLINE details of this event
+                              - button "More info" [ref=e788] [cursor=pointer]:
+                                - generic [ref=e789]: More info
+                            - link "Buy Tickets" [ref=e791] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/private-session-career-success-job-transition-with-3doshas-strengths-energies-4
+                              - generic [ref=e792]: Buy Tickets
+                      - listitem [ref=e793]:
+                        - generic [ref=e794]:
+                          - 'img "Private Session: Successful Interviewing Skills with 3Doshas Strengths/Energies. (3)" [ref=e800]'
+                          - generic [ref=e801]:
+                            - generic [ref=e802]:
+                              - 'link "Private Session: Successful Interviewing Skills with 3Doshas Strengths/Energies. (3)" [ref=e803] [cursor=pointer]':
+                                - /url: https://www.3doshas.com/event-details/private-session-successful-interviewing-skills-with-3doshas-strengths-energies-3-1
+                              - generic [ref=e805]:
+                                - generic [ref=e806]: Date and time is TBD
+                                - generic [ref=e808]: Location TBD - Contact us for Zoom Details
+                              - button "More info" [ref=e810] [cursor=pointer]:
+                                - generic [ref=e811]: More info
+                            - link "Buy Tickets" [ref=e813] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/private-session-successful-interviewing-skills-with-3doshas-strengths-energies-3-1
+                              - generic [ref=e814]: Buy Tickets
+                      - listitem [ref=e815]:
+                        - generic [ref=e816]:
+                          - img "1 on 1 coaching with a certified 3Doshas coach (1)" [ref=e822]
+                          - generic [ref=e823]:
+                            - generic [ref=e824]:
+                              - link "1 on 1 coaching with a certified 3Doshas coach (1)" [ref=e825] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/1-on-1-coaching-with-a-certified-3doshas-coach-1
+                              - generic [ref=e827]:
+                                - generic [ref=e828]: Time is TBD
+                                - generic [ref=e830]: RSVP for ONLINE details
+                              - button "More info" [ref=e832] [cursor=pointer]:
+                                - generic [ref=e833]: More info
+                            - link "RSVP" [ref=e835] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/1-on-1-coaching-with-a-certified-3doshas-coach-1
+                              - generic [ref=e836]: RSVP
+                      - listitem [ref=e837]:
+                        - generic [ref=e838]:
+                          - img "3rd Sunday Community Event - New Event Every Month" [ref=e844]
+                          - generic [ref=e845]:
+                            - generic [ref=e846]:
+                              - generic [ref=e849]: Multiple Dates
+                              - link "3rd Sunday Community Event - New Event Every Month" [ref=e850] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/3rd-sunday-community-event-new-event-every-month-2026-04-19-10-00
+                              - generic [ref=e852]:
+                                - generic [ref=e853]: Sun, Apr 19
+                                - generic [ref=e855]: Location is TBD
+                              - button "More info" [ref=e857] [cursor=pointer]:
+                                - generic [ref=e858]: More info
+                            - link "Details" [ref=e860] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/3rd-sunday-community-event-new-event-every-month-2026-04-19-10-00
+                              - generic [ref=e861]: Details
+                      - listitem [ref=e862]:
+                        - generic [ref=e863]:
+                          - img "3Doshas Mentorship Circle (Students+Professionals) Online Every Friday" [ref=e869]
+                          - generic [ref=e870]:
+                            - generic [ref=e871]:
+                              - generic [ref=e874]: Multiple Dates
+                              - link "3Doshas Mentorship Circle (Students+Professionals) Online Every Friday" [ref=e875] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/3doshas-mentorship-circle-students-professionals-online-every-friday-2026-04-10-15-00
+                              - generic [ref=e877]:
+                                - generic [ref=e878]: Fri, Apr 10
+                                - generic [ref=e880]: Online
+                              - button "More info" [ref=e882] [cursor=pointer]:
+                                - generic [ref=e883]: More info
+                            - link "Details" [ref=e885] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/3doshas-mentorship-circle-students-professionals-online-every-friday-2026-04-10-15-00
+                              - generic [ref=e886]: Details
+                      - listitem [ref=e887]:
+                        - generic [ref=e888]:
+                          - img "Mentorship Circle (Students+Professionals) Online Every Saturday" [ref=e894]
+                          - generic [ref=e895]:
+                            - generic [ref=e896]:
+                              - generic [ref=e899]: Multiple Dates
+                              - link "Mentorship Circle (Students+Professionals) Online Every Saturday" [ref=e900] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/mentorship-circle-students-professionals-online-every-saturday-2025-12-13-10-00
+                              - generic [ref=e902]:
+                                - generic [ref=e903]: Sat, Dec 13
+                                - generic [ref=e905]: Online
+                              - button "More info" [ref=e907] [cursor=pointer]:
+                                - generic [ref=e908]: More info
+                            - link "Details" [ref=e910] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/mentorship-circle-students-professionals-online-every-saturday-2025-12-13-10-00
+                              - generic [ref=e911]: Details
+                      - listitem [ref=e912]:
+                        - generic [ref=e913]:
+                          - img "3rd Sunday 3Doshas Community Event" [ref=e919]
+                          - generic [ref=e920]:
+                            - generic [ref=e921]:
+                              - generic [ref=e924]: Multiple Dates
+                              - link "3rd Sunday 3Doshas Community Event" [ref=e925] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/3rd-sunday-3doshas-community-event-2025-09-21-10-00
+                              - generic [ref=e927]:
+                                - generic [ref=e928]: Sun, Sep 21
+                                - generic [ref=e930]: Online
+                              - button "More info" [ref=e932] [cursor=pointer]:
+                                - generic [ref=e933]: More info
+                            - link "Details" [ref=e935] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/3rd-sunday-3doshas-community-event-2025-09-21-10-00
+                              - generic [ref=e936]: Details
+                      - listitem [ref=e937]:
+                        - generic [ref=e938]:
+                          - 'img "Level Up: Health Hacks Everyone Needs (3Doshas Free Community Session)" [ref=e944]'
+                          - generic [ref=e945]:
+                            - generic [ref=e946]:
+                              - 'link "Level Up: Health Hacks Everyone Needs (3Doshas Free Community Session)" [ref=e947] [cursor=pointer]':
+                                - /url: https://www.3doshas.com/event-details/level-up-health-hacks-everyone-needs-3doshas-free-community-session
+                              - generic [ref=e949]:
+                                - generic [ref=e950]: Sat, Sep 16
+                                - generic [ref=e952]: Online Conference
+                              - button "More info" [ref=e954] [cursor=pointer]:
+                                - generic [ref=e955]: More info
+                            - link "Details" [ref=e957] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/level-up-health-hacks-everyone-needs-3doshas-free-community-session
+                              - generic [ref=e958]: Details
+                      - listitem [ref=e959]:
+                        - generic [ref=e960]:
+                          - 'img "Pro Community Session: Successful leadership styles & leveraging 3Doshas core principles of your strengths." [ref=e966]'
+                          - generic [ref=e967]:
+                            - generic [ref=e968]:
+                              - 'link "Pro Community Session: Successful leadership styles & leveraging 3Doshas core principles of your strengths." [ref=e969] [cursor=pointer]':
+                                - /url: https://www.3doshas.com/event-details/pro-community-session-successful-leadership-styles-leveraging-3doshas-core-principles-of-your-strengths
+                              - generic [ref=e971]:
+                                - generic [ref=e972]: Mon, Mar 13
+                                - generic [ref=e974]: RSVP to get ONLINE details of this event
+                              - button "More info" [ref=e976] [cursor=pointer]:
+                                - generic [ref=e977]: More info
+                            - link "Details" [ref=e979] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/pro-community-session-successful-leadership-styles-leveraging-3doshas-core-principles-of-your-strengths
+                              - generic [ref=e980]: Details
+                      - listitem [ref=e981]:
+                        - generic [ref=e982]:
+                          - img "Body-Mind Connection & Alignment in Yoga/Ayurveda" [ref=e988]
+                          - generic [ref=e989]:
+                            - generic [ref=e990]:
+                              - link "Body-Mind Connection & Alignment in Yoga/Ayurveda" [ref=e991] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/body-mind-connection-alignment-in-yoga-ayurveda
+                              - generic [ref=e993]:
+                                - generic [ref=e994]: Sun, Feb 26
+                                - generic [ref=e996]: Zoom Meeting
+                              - button "More info" [ref=e998] [cursor=pointer]:
+                                - generic [ref=e999]: More info
+                            - link "Details" [ref=e1001] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/body-mind-connection-alignment-in-yoga-ayurveda
+                              - generic [ref=e1002]: Details
+                      - listitem [ref=e1003]:
+                        - generic [ref=e1004]:
+                          - img "Entrepreneurship Youth Program (AGE 10+) - Session 3" [ref=e1010]
+                          - generic [ref=e1011]:
+                            - generic [ref=e1012]:
+                              - generic [ref=e1015]: Multiple Dates
+                              - link "Entrepreneurship Youth Program (AGE 10+) - Session 3" [ref=e1016] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/entrepreneurship-youth-program-age-10-session-3-2023-02-25-10-00
+                              - generic [ref=e1018]:
+                                - generic [ref=e1019]: Sat, Feb 25
+                                - generic [ref=e1021]: Zoom Meeting
+                              - button "More info" [ref=e1023] [cursor=pointer]:
+                                - generic [ref=e1024]: More info
+                            - link "Details" [ref=e1026] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/entrepreneurship-youth-program-age-10-session-3-2023-02-25-10-00
+                              - generic [ref=e1027]: Details
+                      - listitem [ref=e1028]:
+                        - generic [ref=e1029]:
+                          - img "3Doshas Core Team Member Session - Core Team Only" [ref=e1035]
+                          - generic [ref=e1036]:
+                            - generic [ref=e1037]:
+                              - generic [ref=e1040]: Multiple Dates
+                              - link "3Doshas Core Team Member Session - Core Team Only" [ref=e1041] [cursor=pointer]:
+                                - /url: https://www.3doshas.com/event-details/3doshas-core-team-member-session-core-team-only-2022-09-18-09-00
+                              - generic [ref=e1043]:
+                                - generic [ref=e1044]: Sun, Sep 18
+                                - generic [ref=e1046]: Over Zoom
+                              - button "More info" [ref=e1048] [cursor=pointer]:
+                                - generic [ref=e1049]: More info
+                            - link "Details" [ref=e1051] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/3doshas-core-team-member-session-core-team-only-2022-09-18-09-00
+                              - generic [ref=e1052]: Details
+                      - listitem [ref=e1053]:
+                        - generic [ref=e1054]:
+                          - 'img "Free Session: Mindfulness & 3Doshas greater energies alignment" [ref=e1060]'
+                          - generic [ref=e1061]:
+                            - generic [ref=e1062]:
+                              - 'link "Free Session: Mindfulness & 3Doshas greater energies alignment" [ref=e1063] [cursor=pointer]':
+                                - /url: https://www.3doshas.com/event-details/free-session-mindfulness-3doshas-greater-energies-alignment
+                              - generic [ref=e1065]:
+                                - generic [ref=e1066]: Sat, Aug 27
+                                - generic [ref=e1068]: Online Zoom
+                              - button "More info" [ref=e1070] [cursor=pointer]:
+                                - generic [ref=e1071]: More info
+                            - link "Details" [ref=e1073] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/free-session-mindfulness-3doshas-greater-energies-alignment
+                              - generic [ref=e1074]: Details
+                      - listitem [ref=e1075]:
+                        - generic [ref=e1076]:
+                          - 'img "3Doshas Free Community Session: Focus & Distractions" [ref=e1082]'
+                          - generic [ref=e1083]:
+                            - generic [ref=e1084]:
+                              - 'link "3Doshas Free Community Session: Focus & Distractions" [ref=e1085] [cursor=pointer]':
+                                - /url: https://www.3doshas.com/event-details/3doshas-free-community-session-focus-distractions
+                              - generic [ref=e1087]:
+                                - generic [ref=e1088]: Sat, Aug 13
+                                - generic [ref=e1090]: Zoom Meeting
+                              - button "More info" [ref=e1092] [cursor=pointer]:
+                                - generic [ref=e1093]: More info
+                            - link "Details" [ref=e1095] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/3doshas-free-community-session-focus-distractions
+                              - generic [ref=e1096]: Details
+                      - listitem [ref=e1097]:
+                        - generic [ref=e1098]:
+                          - 'img "Founding Community Member Event: Join 3Doshas Founding Community Team" [ref=e1104]'
+                          - generic [ref=e1105]:
+                            - generic [ref=e1106]:
+                              - 'link "Founding Community Member Event: Join 3Doshas Founding Community Team" [ref=e1107] [cursor=pointer]':
+                                - /url: https://www.3doshas.com/event-details/founding-community-member-event-join-3doshas-founding-community-team
+                              - generic [ref=e1109]:
+                                - generic [ref=e1110]: Sat, Jul 16
+                                - generic [ref=e1112]: Online Event
+                              - button "More info" [ref=e1114] [cursor=pointer]:
+                                - generic [ref=e1115]: More info
+                            - link "Details" [ref=e1117] [cursor=pointer]:
+                              - /url: https://www.3doshas.com/event-details/founding-community-member-event-join-3doshas-founding-community-team
+                              - generic [ref=e1118]: Details
+    - iframe [ref=e1149]:
+      - main [ref=f5e1]:
+        - button "Let's Chat!" [ref=f5e3] [cursor=pointer]:
+          - img [ref=f5e4]
+          - heading "Let's Chat!" [level=2] [ref=f5e6]
+    - contentinfo [ref=e1119]:
+      - generic [ref=e1125]:
+        - generic:
+          - generic:
+            - heading "Subscribe" [level=2] [ref=e1126]:
+              - generic [ref=e1127]: Subscribe
+            - paragraph [ref=e1128]:
+              - generic [ref=e1129]: Receive our newsletter with programs, events, and exclusive deals for our subscribers
+            - generic [ref=e1131]:
+              - generic:
+                - generic:
+                  - generic [ref=e1132]:
+                    - generic [ref=e1133]: Enter your email here *
+                    - textbox "Enter your email here *" [ref=e1135]:
+                      - /placeholder: ""
+                  - button "Sign Up" [ref=e1137] [cursor=pointer]:
+                    - generic [ref=e1138]: Sign Up
+            - paragraph [ref=e1139]:
+              - generic [ref=e1140]: Copyright © 2020 - 2026 - 3Doshas / TriDoshas Coaching - All Rights Reserved.
+  - region "bottom of page"

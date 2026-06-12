@@ -10,6 +10,35 @@ interface LinkedInPreviewProps {
 }
 
 const FOLD_CHARS = 210;
+const LINK_COLOR = "#0a66c2";
+
+function renderLinkedInText(text: string) {
+  const pattern = /(#\w[\w]*|@\w[\w]*|https?:\/\/[^\s]+)/g;
+  const parts: (string | { type: "link"; text: string })[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    parts.push({ type: "link", text: match[0] });
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.map((part, i) =>
+    typeof part === "string" ? (
+      <span key={i}>{part}</span>
+    ) : (
+      <span key={i} style={{ color: LINK_COLOR, fontWeight: 600, cursor: "pointer" }}>
+        {part.text}
+      </span>
+    )
+  );
+}
 
 export default function LinkedInPreview({
   content,
@@ -24,11 +53,15 @@ export default function LinkedInPreview({
   const charCount = fullText.length;
 
   return (
-    <div className="rounded-xl bg-white text-black overflow-hidden shadow-xl shadow-black/30 ring-1 ring-white/10 h-full flex flex-col">
+    <div className="rounded-xl bg-white text-black overflow-hidden h-full flex flex-col"
+      style={{ boxShadow: "0 8px 32px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06)" }}>
       <div className="flex items-start gap-3 p-4 pb-2">
-        <div className="h-12 w-12 shrink-0 rounded-full bg-gradient-to-br from-indigo-900 to-purple-700 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-900/30">
-          SS
-        </div>
+        <img
+          src="/sumeet.jpg"
+          alt={authorName}
+          className="h-12 w-12 shrink-0 rounded-full object-cover"
+          style={{ boxShadow: "0 2px 8px rgba(28,36,52,0.3)" }}
+        />
         <div className="min-w-0">
           <p className="font-semibold text-sm leading-tight">{authorName}</p>
           <p className="text-xs text-gray-500 leading-tight truncate">{authorTitle}</p>
@@ -38,7 +71,7 @@ export default function LinkedInPreview({
 
       <div className="px-4 pb-3 flex-1">
         <div className="text-sm leading-relaxed whitespace-pre-wrap">
-          {displayText}
+          {renderLinkedInText(displayText)}
           {needsFold && !expanded && (
             <button onClick={() => setExpanded(true)} className="text-gray-500 hover:text-gray-700 hover:underline ml-1">
               ...see more

@@ -30,49 +30,50 @@ export default function InterviewCard({
 
   return (
     <div
-      className={`group overflow-hidden rounded border transition-all duration-200 animate-fade-in-up ${
-        focused
-          ? "border-gray-600 bg-[#0f0f0f]"
-          : "border-[#1a1a1a] bg-[#0a0a0a] hover:bg-[#0e0e0e]"
+      className={`group overflow-hidden rounded-xl transition-all duration-200 animate-fade-in-up ${
+        focused ? "card-selected" : ""
       }`}
-      style={{ animationDelay: `${index * 60}ms` }}
+      style={{
+        background: focused ? "var(--bg-surface)" : "var(--bg-card)",
+        border: focused ? undefined : "1px solid var(--border-subtle)",
+        animationDelay: `${index * 60}ms`,
+      }}
       role="group"
       aria-labelledby={`${questionId}-label`}
     >
       <div className="grid" style={{ gridTemplateColumns: "52px 1fr 64px" }}>
         <div
-          className={`flex items-start pt-[22px] pl-[14px] font-mono text-[28px] font-medium leading-none transition-colors duration-200 ${
-            focused ? "text-gray-600" : "text-[#1e1e1e]"
-          }`}
+          className="flex items-start pt-[22px] pl-[14px] font-mono text-[28px] font-medium leading-none transition-colors duration-200"
+          style={{ color: focused ? "var(--accent-orange)" : "var(--text-faint)" }}
           aria-hidden="true"
         >
           {String(index + 1).padStart(2, "0")}
         </div>
 
         <div
-          className={`min-w-0 border-l px-5 py-[18px] transition-colors duration-200 ${
-            focused ? "border-gray-400" : "border-[#1a1a1a]"
-          }`}
+          className="min-w-0 border-l px-5 py-[18px] transition-colors duration-200"
+          style={{ borderColor: focused ? "var(--accent-orange)" : "var(--border-subtle)" }}
         >
           <span
-            className={`mb-2 inline-block px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-[0.12em] ${
-              question.required
-                ? "bg-[#161616] text-gray-400"
-                : "bg-transparent text-gray-700"
-            }`}
+            className="mb-2 inline-block rounded-md px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-[0.12em]"
+            style={question.required
+              ? { background: "var(--bg-elevated)", color: "var(--accent-bronze)" }
+              : { background: "transparent", color: "var(--text-muted)" }
+            }
           >
             {question.required ? "Required" : "Optional"}
           </span>
 
           <p
             id={`${questionId}-label`}
-            className="mb-1 text-[14px] font-medium leading-[1.5] tracking-tight text-gray-300 group-hover:text-gray-200 transition-colors"
+            className="mb-1 text-[14px] font-medium leading-[1.5] tracking-tight transition-colors"
+            style={{ color: "var(--text-primary)" }}
           >
             <span className="sr-only">Question {index + 1} of {total}{question.required ? ", required" : ", optional"}: </span>
             {question.question}
           </p>
 
-          <p className="mb-3 text-[11px] leading-relaxed text-gray-500 italic">
+          <p className="mb-3 text-[11px] leading-relaxed italic" style={{ color: "var(--text-muted)" }}>
             {question.purpose}
           </p>
 
@@ -86,25 +87,23 @@ export default function InterviewCard({
             placeholder="2-3 sentences — think specific moments, not general themes"
             rows={focused || hasAnswer ? 3 : 2}
             aria-required={question.required}
-            className={`w-full rounded border bg-[#111] p-3 text-[13px] leading-relaxed text-gray-200 placeholder-gray-700 transition-all duration-200 focus:outline-none resize-none ${
-              focused
-                ? "border-gray-500 bg-[#0f0f0f]"
-                : "border-[#1a1a1a] hover:border-[#222]"
-            }`}
+            className="input-field w-full rounded-lg p-3 text-[13px] leading-relaxed resize-none"
           />
         </div>
 
-        <div className="flex flex-col items-center justify-between border-l border-[#1a1a1a] px-3 py-[18px]">
-          <span className="vertical-text flex-1 flex items-center font-mono text-[8.5px] uppercase tracking-[0.08em] text-gray-700">
+        <div className="flex flex-col items-center justify-between border-l px-3 py-[18px]"
+          style={{ borderColor: "var(--border-subtle)" }}>
+          <span className="vertical-text flex-1 flex items-center font-mono text-[8.5px] uppercase tracking-[0.08em]"
+            style={{ color: "var(--text-muted)" }}>
             Q{String(index + 1).padStart(2, "0")}
           </span>
 
           {hasAnswer ? (
-            <span className="h-[5px] w-[5px] rounded-full bg-emerald-600" />
+            <span className="h-[6px] w-[6px] rounded-full" style={{ background: "var(--success)" }} />
           ) : question.required ? (
-            <span className="h-[5px] w-[5px] rounded-full border border-gray-600" />
+            <span className="h-[6px] w-[6px] rounded-full" style={{ border: "1.5px solid var(--accent-orange)" }} />
           ) : (
-            <span className="h-[5px] w-[5px] rounded-full border border-[#1e1e1e]" />
+            <span className="h-[6px] w-[6px] rounded-full" style={{ border: "1.5px solid var(--text-faint)" }} />
           )}
         </div>
       </div>

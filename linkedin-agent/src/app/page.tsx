@@ -6,6 +6,7 @@ import LinkedInPreview from "@/components/preview/LinkedInPreview";
 import StepProgress from "@/components/create/StepProgress";
 import InterviewCard from "@/components/create/InterviewCard";
 import PipelineViz from "@/components/pipeline/PipelineViz";
+import Logo3Doshas from "@/components/brand/Logo3Doshas";
 
 type Tab = "auto" | "manual";
 type ManualStep = "idea" | "interview" | "review" | "result";
@@ -35,7 +36,6 @@ export default function Dashboard() {
   const [rewriteFeedback, setRewriteFeedback] = useState("");
   const [rewriting, setRewriting] = useState(false);
 
-  // Pipeline viz state
   const [pipeSteps, setPipeSteps] = useState<PipelineStep[]>([]);
   const [pipeStart, setPipeStart] = useState<number | null>(null);
   const [pipeElapsed, setPipeElapsed] = useState(0);
@@ -222,38 +222,41 @@ export default function Dashboard() {
   const manualStepIndex = ["idea", "interview", "review", "result"].indexOf(manualStep);
 
   return (
-    <main className="min-h-screen bg-[#09090b] text-gray-200">
+    <main className="min-h-screen" style={{ background: "var(--bg-base)" }}>
       {/* Header */}
-      <header className="border-b border-[#1a1a1a]">
+      <header className="relative border-b" style={{ borderColor: "var(--border-subtle)", background: "var(--bg-surface)" }}>
+        <div className="absolute bottom-0 left-0 right-0 h-[2px]" style={{ background: "linear-gradient(90deg, transparent 0%, var(--accent-orange) 50%, transparent 100%)", opacity: 0.4 }} />
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-4">
+          <Logo3Doshas size={36} />
+
           <div className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded bg-white text-sm font-black text-black">3D</div>
-            <div>
-              <h1 className="text-lg font-bold tracking-tight">
-                <span className="text-white">3Doshas</span>
-                <span className="ml-1.5 text-gray-500">LinkedIn Agent</span>
-              </h1>
-              <p className="text-[11px] text-gray-600 -mt-0.5">Content pipeline</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="flex rounded bg-[#111] p-1 border border-[#1a1a1a]">
+            <div className="flex rounded-lg p-1" style={{ background: "var(--bg-base)", border: "1px solid var(--border-subtle)" }}>
               {(["auto", "manual"] as const).map((t) => (
                 <button key={t} onClick={() => setTab(t)}
-                  className={`rounded px-4 py-1.5 text-sm font-medium transition-all duration-150 ${
-                    tab === t ? "bg-white text-black" : "text-gray-500 hover:text-gray-300"
-                  }`}>
-                  {t === "auto" ? "Auto Flow" : "Manual Flow"}
+                  className="rounded-md px-4 py-1.5 text-sm font-medium transition-all duration-200"
+                  style={tab === t ? {
+                    background: "linear-gradient(135deg, var(--accent-orange), #E86520)",
+                    color: "white",
+                    boxShadow: "0 2px 8px rgba(255,119,51,0.25)"
+                  } : {
+                    color: "var(--text-muted)",
+                  }}>
+                  {t === "auto" ? "Pipeline" : "Guided"}
                 </button>
               ))}
             </div>
+
             <button onClick={() => setShowLogs(!showLogs)}
-              className={`relative rounded border px-3 py-1.5 text-xs font-medium transition-all duration-150 ${
-                showLogs ? "border-gray-500 bg-[#111] text-gray-300" : "border-[#1a1a1a] bg-[#111] text-gray-500 hover:border-[#333]"
-              }`}>
-              Agent Log
+              className="relative rounded-lg px-3 py-1.5 text-xs font-medium transition-all duration-200"
+              style={{
+                background: showLogs ? "var(--bg-elevated)" : "var(--bg-base)",
+                border: `1px solid ${showLogs ? "var(--border-medium)" : "var(--border-subtle)"}`,
+                color: showLogs ? "var(--text-primary)" : "var(--text-muted)",
+              }}>
+              Activity
               {agentLogs.length > 0 && (
-                <span className="absolute -right-1.5 -top-1.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-white px-1 text-[10px] font-bold text-black">
+                <span className="absolute -right-1.5 -top-1.5 flex h-4 min-w-4 items-center justify-center rounded-full px-1 text-[10px] font-bold text-white"
+                  style={{ background: "var(--accent-orange)" }}>
                   {agentLogs.length}
                 </span>
               )}
@@ -263,30 +266,38 @@ export default function Dashboard() {
       </header>
 
       <div className="mx-auto max-w-7xl p-6">
-        {/* Error */}
+        {/* Error banner */}
         {error && (
-          <div className="mb-4 flex items-center gap-3 rounded border border-[#1a1a1a] bg-[#111] p-4 animate-fade-in-up">
-            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded bg-red-500/10 text-red-400 text-xs font-bold">!</span>
-            <span className="text-sm text-gray-300 flex-1">{friendlyError(error)}</span>
-            <button onClick={() => setError(null)} className="rounded p-1 text-gray-600 hover:text-gray-400 transition-colors text-sm">✕</button>
+          <div className="mb-4 flex items-center gap-3 rounded-xl p-4 animate-fade-in-up"
+            style={{ background: "rgba(229,91,91,0.06)", border: "1px solid rgba(229,91,91,0.15)" }}>
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-xs font-bold"
+              style={{ background: "rgba(229,91,91,0.12)", color: "var(--error)" }}>!</span>
+            <span className="text-sm flex-1" style={{ color: "var(--text-secondary)" }}>{friendlyError(error)}</span>
+            <button onClick={() => setError(null)} className="rounded p-1 transition-colors text-sm" style={{ color: "var(--text-muted)" }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
           </div>
         )}
 
-        {/* Agent Log */}
+        {/* Agent Activity Log */}
         {showLogs && agentLogs.length > 0 && (
-          <div className="mb-4 rounded border border-[#1a1a1a] bg-[#0a0a0a] p-4 animate-fade-in-up">
-            <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-600">Agent Activity</h3>
-              <span className="text-[10px] font-mono text-gray-700">{agentLogs.reduce((s, l) => s + l.tokensUsed, 0).toLocaleString()} total tokens</span>
+          <div className="mb-4 rounded-xl p-5 animate-fade-in-up"
+            style={{ background: "var(--bg-card)", border: "1px solid var(--border-subtle)" }}>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--accent-bronze)" }}>Agent Activity</h3>
+              <span className="text-[10px] font-mono" style={{ color: "var(--text-muted)" }}>
+                {agentLogs.reduce((s, l) => s + l.tokensUsed, 0).toLocaleString()} total tokens
+              </span>
             </div>
-            <div className="space-y-1">
+            <div className="space-y-1.5">
               {agentLogs.map((log, i) => (
-                <div key={i} className="flex items-center justify-between bg-[#111] px-3 py-2 text-xs">
-                  <div className="flex items-center gap-2">
-                    <div className="h-1.5 w-1.5 rounded-full bg-gray-500" />
-                    <span className="font-medium text-gray-400">{log.agent}</span>
+                <div key={i} className="flex items-center justify-between rounded-lg px-3 py-2.5 text-xs"
+                  style={{ background: "var(--bg-surface)" }}>
+                  <div className="flex items-center gap-2.5">
+                    <div className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--accent-orange)" }} />
+                    <span className="font-medium" style={{ color: "var(--text-secondary)" }}>{log.agent}</span>
                   </div>
-                  <div className="flex items-center gap-3 text-gray-600 font-mono">
+                  <div className="flex items-center gap-3 font-mono" style={{ color: "var(--text-muted)" }}>
                     {log.tokensUsed > 0 && <span>{log.tokensUsed.toLocaleString()} tok</span>}
                     <span>{log.timestamp}</span>
                   </div>
@@ -297,92 +308,118 @@ export default function Dashboard() {
         )}
 
         <div className={`grid gap-6 ${activeDraft ? "grid-cols-1 lg:grid-cols-2" : "grid-cols-1"}`}>
-          {/* LEFT */}
+          {/* LEFT PANEL */}
           <div>
             {tab === "auto" && (
               <div>
-                <div className="mb-4 flex items-center justify-between">
+                <div className="mb-5 flex items-center justify-between">
                   <div>
-                    <h2 className="text-lg font-semibold">Automated Pipeline</h2>
-                    <p className="text-xs text-gray-500">Research topics, generate proposals, write posts</p>
+                    <h2 className="text-xl font-bold tracking-tight" style={{ color: "var(--text-primary)" }}>
+                      Content Pipeline
+                    </h2>
+                    <p className="text-[13px] mt-0.5" style={{ color: "var(--text-muted)" }}>
+                      Research, ideate, and craft LinkedIn content in Sumeet&apos;s authentic voice
+                    </p>
                   </div>
                   {loading ? (
-                    <button onClick={cancelLoading} className="rounded bg-[#111] border border-[#333] px-5 py-2 text-sm font-medium text-red-400 hover:border-red-400/50 transition-colors">Cancel</button>
+                    <button onClick={cancelLoading}
+                      className="rounded-lg px-5 py-2.5 text-sm font-medium transition-all duration-200"
+                      style={{ background: "var(--bg-surface)", border: "1px solid rgba(229,91,91,0.3)", color: "var(--error)" }}>
+                      Cancel
+                    </button>
                   ) : (
-                    <button onClick={runAutoFlow} className="rounded bg-white px-5 py-2 text-sm font-medium text-black hover:bg-gray-200 transition-colors">Run Pipeline</button>
+                    <button onClick={runAutoFlow} className="btn-primary rounded-lg px-6 py-2.5 text-sm">
+                      Generate Content
+                    </button>
                   )}
                 </div>
 
                 {/* Pipeline Viz */}
                 {pipeSteps.length > 0 && (loading || pipeSteps.some(s => s.status !== "pending")) && (
-                  <div className="mb-4"><PipelineViz steps={pipeSteps} elapsed={pipeElapsed} /></div>
+                  <div className="mb-5"><PipelineViz steps={pipeSteps} elapsed={pipeElapsed} /></div>
                 )}
 
                 {/* Empty state */}
                 {proposals.length === 0 && !loading && pipeSteps.length === 0 && (
-                  <div className="rounded border border-dashed border-[#1a1a1a] p-16 text-center">
-                    <div className="mx-auto mb-4 font-mono text-4xl text-[#1a1a1a]">—</div>
-                    <p className="text-sm font-medium text-gray-500 mb-1">No proposals yet</p>
-                    <p className="text-xs text-gray-700">Click &ldquo;Run Pipeline&rdquo; to research topics and generate post proposals</p>
+                  <div className="rounded-xl p-16 text-center bg-dots"
+                    style={{ border: "1px dashed var(--border-medium)", background: "var(--bg-card)" }}>
+                    <div className="mx-auto mb-6 flex items-center justify-center">
+                      <svg width="56" height="56" viewBox="0 0 200 200" fill="none" className="opacity-20">
+                        <circle cx="100" cy="100" r="90" stroke="#D4956B" strokeWidth="3" />
+                        <polygon points="100,26 58,98 142,98" fill="#D4956B" />
+                        <polygon points="58,106 16,178 100,178" fill="#D4956B" />
+                        <polygon points="142,106 100,178 184,178" fill="#D4956B" />
+                        <circle cx="100" cy="128" r="8" fill="#D4956B" />
+                      </svg>
+                    </div>
+                    <p className="text-[15px] font-semibold mb-1.5" style={{ color: "var(--text-secondary)" }}>
+                      Ready to amplify your voice
+                    </p>
+                    <p className="text-[13px] max-w-sm mx-auto" style={{ color: "var(--text-muted)" }}>
+                      Hit &ldquo;Generate Content&rdquo; to research trending topics and craft LinkedIn posts aligned with the 3Doshas brand
+                    </p>
                   </div>
                 )}
 
                 {/* Proposal cards */}
                 {proposals.length > 0 && (
-                  <div className="mb-2 flex items-baseline justify-between">
-                    <span className="text-[13px] font-semibold text-gray-500">Proposals</span>
-                    <span className="font-mono text-[10px] text-gray-600 tracking-wide">
+                  <div className="mb-3 flex items-baseline justify-between">
+                    <span className="text-[13px] font-semibold" style={{ color: "var(--accent-bronze)" }}>Proposals</span>
+                    <span className="font-mono text-[10px] tracking-wide" style={{ color: "var(--text-muted)" }}>
                       {proposals.length} proposals{drafts.size > 0 && <> · {drafts.size} drafted</>}
                     </span>
                   </div>
                 )}
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2.5">
                   {proposals.map((p, idx) => (
                     <div key={p.id}
-                      className={`group overflow-hidden rounded border transition-colors duration-150 animate-fade-in-up cursor-pointer ${
-                        selectedDraft === p.id
-                          ? "border-gray-700 bg-[#0f0f0f]"
-                          : "border-[#1a1a1a] bg-[#0a0a0a] hover:bg-[#0e0e0e]"
+                      className={`group overflow-hidden rounded-xl transition-all duration-200 animate-fade-in-up cursor-pointer ${
+                        selectedDraft === p.id ? "card-selected" : ""
                       }`}
-                      style={{ animationDelay: `${idx * 75}ms` }}
+                      style={{
+                        background: selectedDraft === p.id ? "var(--bg-surface)" : "var(--bg-card)",
+                        border: selectedDraft === p.id ? undefined : "1px solid var(--border-subtle)",
+                        animationDelay: `${idx * 75}ms`,
+                      }}
                       onClick={() => drafts.has(p.id) && setSelectedDraft(p.id)}>
                       <div className="grid" style={{ gridTemplateColumns: "52px 1fr auto" }}>
-                        {/* Index number */}
-                        <div className={`flex items-start pt-[26px] pl-[18px] font-mono text-[28px] font-medium leading-none ${
-                          selectedDraft === p.id ? "text-gray-700" : "text-[#1e1e1e]"
-                        }`}>
+                        <div className="flex items-start pt-[26px] pl-[18px] font-mono text-[28px] font-medium leading-none"
+                          style={{ color: selectedDraft === p.id ? "var(--accent-orange)" : "var(--text-faint)" }}>
                           {String(idx + 1).padStart(2, "0")}
                         </div>
 
-                        {/* Body */}
-                        <div className={`min-w-0 border-l px-5 py-[22px] ${
-                          selectedDraft === p.id ? "border-gray-300" : "border-[#1a1a1a]"
-                        }`}>
-                          <span className="mb-2.5 inline-block bg-[#161616] px-2 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-[0.12em] text-gray-400">
+                        <div className="min-w-0 border-l px-5 py-[22px]"
+                          style={{ borderColor: selectedDraft === p.id ? "var(--accent-orange)" : "var(--border-subtle)" }}>
+                          <span className="mb-2.5 inline-block rounded-md px-2.5 py-0.5 font-sans text-[10px] font-semibold uppercase tracking-[0.12em]"
+                            style={{ background: "var(--bg-elevated)", color: "var(--accent-bronze)" }}>
                             {p.postType}
                           </span>
-                          <h4 className="mb-1.5 text-[15px] font-semibold leading-[1.45] tracking-tight text-gray-300 group-hover:text-gray-200 transition-colors">
+                          <h4 className="mb-1.5 text-[15px] font-semibold leading-[1.45] tracking-tight transition-colors"
+                            style={{ color: "var(--text-primary)" }}>
                             {p.topic}
                           </h4>
-                          <p className="text-[13px] leading-relaxed text-gray-600 line-clamp-2">
+                          <p className="text-[13px] leading-relaxed line-clamp-2" style={{ color: "var(--text-muted)" }}>
                             {p.hook}
                           </p>
                         </div>
 
-                        {/* Side panel */}
-                        <div className="flex min-w-[96px] flex-col items-center justify-between border-l border-[#1a1a1a] px-[18px] py-[22px]">
-                          <span className="vertical-text flex-1 flex items-center font-mono text-[8.5px] uppercase tracking-[0.08em] text-gray-700">
+                        <div className="flex min-w-[96px] flex-col items-center justify-between border-l px-[18px] py-[22px]"
+                          style={{ borderColor: "var(--border-subtle)" }}>
+                          <span className="vertical-text flex-1 flex items-center font-mono text-[8.5px] uppercase tracking-[0.08em]"
+                            style={{ color: "var(--text-muted)" }}>
                             {p.contentPillar}
                           </span>
                           {!drafts.has(p.id) ? (
-                            <span className="flex items-center gap-1.5 font-mono text-[9px] uppercase tracking-[0.06em] text-amber-500">
-                              <div className="h-[7px] w-[7px] rounded-full border border-amber-500 border-t-transparent animate-spin" />
+                            <span className="flex items-center gap-1.5 font-mono text-[9px] uppercase tracking-[0.06em]"
+                              style={{ color: "var(--accent-orange)" }}>
+                              <div className="h-[7px] w-[7px] rounded-full border border-current border-t-transparent animate-spin" />
                               Writing
                             </span>
                           ) : (
-                            <span className="flex items-center gap-1.5 font-mono text-[9px] uppercase tracking-[0.06em] text-gray-500">
-                              <span className="h-[5px] w-[5px] rounded-full bg-emerald-600" />
-                              Draft ready
+                            <span className="flex items-center gap-1.5 font-mono text-[9px] uppercase tracking-[0.06em]"
+                              style={{ color: "var(--success)" }}>
+                              <span className="h-[5px] w-[5px] rounded-full bg-current" />
+                              Ready
                             </span>
                           )}
                         </div>
@@ -395,16 +432,18 @@ export default function Dashboard() {
 
             {tab === "manual" && (
               <div>
-                <h2 className="text-lg font-semibold mb-1">Create a Post</h2>
+                <h2 className="text-xl font-bold tracking-tight mb-1" style={{ color: "var(--text-primary)" }}>
+                  Craft Your Message
+                </h2>
                 <StepProgress steps={["Idea", "Questions", "Writing", "Result"]} current={manualStepIndex} />
 
                 {manualStep === "idea" && (
                   <div>
                     <textarea value={idea} onChange={(e) => setIdea(e.target.value)}
-                      placeholder="What do you want to post about? A recent event, a teaching moment, a reflection..."
-                      className="mb-3 w-full rounded border border-[#1a1a1a] bg-[#0a0a0a] p-4 text-sm text-gray-200 placeholder-gray-600 focus:border-[#333] focus:outline-none transition-colors" rows={4} />
+                      placeholder="What would you like to share? A leadership insight, a career lesson, a client success story..."
+                      className="input-field mb-3 w-full rounded-xl p-4 text-sm resize-none" rows={4} />
                     <button onClick={startInterview} disabled={loading || !idea.trim()}
-                      className="rounded bg-white px-5 py-2 text-sm font-medium text-black hover:bg-gray-200 disabled:opacity-40 transition-colors">
+                      className="btn-primary rounded-lg px-6 py-2.5 text-sm">
                       {loading ? "Thinking..." : "Next"}
                     </button>
                   </div>
@@ -413,14 +452,14 @@ export default function Dashboard() {
                 {manualStep === "interview" && (
                   <div>
                     <div className="flex items-baseline justify-between mb-3">
-                      <span className="text-[13px] font-semibold text-gray-500">Interview Questions</span>
-                      <span className="font-mono text-[10px] text-gray-600 tracking-wide">
+                      <span className="text-[13px] font-semibold" style={{ color: "var(--accent-bronze)" }}>Interview Questions</span>
+                      <span className="font-mono text-[10px] tracking-wide" style={{ color: "var(--text-muted)" }}>
                         {Object.values(answers).filter(a => a.trim()).length}/{questions.length} answered
                         {" · "}
                         {questions.filter(q => q.required).length} required
                       </span>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2.5">
                       {questions.map((q, i) => (
                         <InterviewCard
                           key={i}
@@ -436,10 +475,14 @@ export default function Dashboard() {
                         />
                       ))}
                     </div>
-                    <div className="flex items-center justify-between pt-4 mt-2 border-t border-[#1a1a1a]">
-                      <button onClick={() => setManualStep("idea")} className="rounded border border-[#1a1a1a] bg-[#111] px-4 py-2 text-sm text-gray-500 hover:border-[#333] hover:text-gray-400 transition-colors">Back</button>
-                      <button onClick={submitAnswers} disabled={loading || questions.filter(q => q.required).some(q => !answers[q.question]?.trim())}
-                        className="rounded bg-white px-5 py-2 text-sm font-medium text-black hover:bg-gray-200 disabled:opacity-40 transition-colors">
+                    <div className="flex items-center justify-between pt-4 mt-3 border-t" style={{ borderColor: "var(--border-subtle)" }}>
+                      <button onClick={() => setManualStep("idea")}
+                        className="btn-secondary rounded-lg px-4 py-2 text-sm">
+                        Back
+                      </button>
+                      <button onClick={submitAnswers}
+                        disabled={loading || questions.filter(q => q.required).some(q => !answers[q.question]?.trim())}
+                        className="btn-primary rounded-lg px-6 py-2.5 text-sm font-semibold">
                         {loading ? "Generating..." : "Generate Post"}
                       </button>
                     </div>
@@ -448,25 +491,28 @@ export default function Dashboard() {
 
                 {manualStep === "review" && (
                   <div className="text-center py-16 animate-fade-in-up">
-                    <div className="mb-4 inline-block h-10 w-10 animate-spin rounded-full border-[3px] border-gray-400 border-t-transparent" />
-                    <p className="text-sm text-gray-500">Writing your post with Sumeet&apos;s voice...</p>
+                    <div className="mb-4 inline-block h-10 w-10 animate-spin rounded-full border-[3px] border-t-transparent"
+                      style={{ borderColor: "var(--accent-orange)", borderTopColor: "transparent" }} />
+                    <p className="text-sm" style={{ color: "var(--text-muted)" }}>Crafting your message in Sumeet&apos;s voice...</p>
                   </div>
                 )}
 
                 {manualStep === "result" && !manualDraft && (
-                  <div className="text-center py-16 text-gray-500 text-sm">Something went wrong. Try again.</div>
+                  <div className="text-center py-16 text-sm" style={{ color: "var(--text-muted)" }}>Something went wrong. Try again.</div>
                 )}
               </div>
             )}
           </div>
 
-          {/* RIGHT: Preview + Edit */}
+          {/* RIGHT PANEL: Preview + Edit */}
           {activeDraft && (
             <div className="sticky top-6 flex flex-col animate-fade-in-up max-h-[calc(100vh-3rem)]">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-600">LinkedIn Preview</h3>
+                <h3 className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--accent-bronze)" }}>
+                  LinkedIn Preview
+                </h3>
                 <button onClick={() => navigator.clipboard.writeText(activeDraft.content + "\n\n" + activeDraft.hashtags.join(" "))}
-                  className="rounded border border-[#1a1a1a] bg-[#111] px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#333] hover:text-gray-300 transition-colors">
+                  className="btn-secondary rounded-lg px-3 py-1.5 text-xs font-medium">
                   Copy Post
                 </button>
               </div>
@@ -477,19 +523,19 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="shrink-0 rounded border border-[#1a1a1a] bg-[#0a0a0a] p-4">
-                <h4 className="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-3">Rewrite</h4>
+              <div className="rounded-xl p-5" style={{ background: "var(--bg-card)", border: "1px solid var(--border-subtle)" }}>
+                <h4 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--accent-bronze)" }}>Refine</h4>
                 <textarea value={rewriteFeedback} onChange={(e) => setRewriteFeedback(e.target.value)}
                   placeholder="e.g. 'make the hook more personal', 'shorten to under 2500 chars', 'mention the SJSU workshop'..."
-                  className="w-full rounded border border-[#1a1a1a] bg-[#111] p-3 text-sm text-gray-200 placeholder-gray-600 focus:border-[#333] focus:outline-none mb-3 transition-colors" rows={2} />
+                  className="input-field w-full rounded-lg p-3 text-sm mb-3 resize-none" rows={2} />
                 <button onClick={rewriteCurrentDraft} disabled={rewriting || !rewriteFeedback.trim()}
-                  className="rounded bg-white px-4 py-2 text-xs font-semibold text-black hover:bg-gray-200 disabled:opacity-40 transition-colors">
-                  {rewriting ? "Rewriting..." : "Rewrite with Feedback"}
+                  className="btn-primary rounded-lg px-5 py-2 text-xs font-semibold">
+                  {rewriting ? "Refining..." : "Refine Post"}
                 </button>
                 {tab === "manual" && manualStep === "result" && (
                   <button onClick={() => { setManualStep("idea"); setManualDraft(null); setIdea(""); setQuestions([]); setAnswers({}); }}
-                    className="mt-3 rounded border border-[#1a1a1a] bg-[#111] px-4 py-2 text-sm text-gray-400 hover:border-[#333] w-full transition-colors">
-                    Start New Post
+                    className="btn-secondary mt-3 rounded-lg px-4 py-2 text-sm w-full">
+                    New Message
                   </button>
                 )}
               </div>
